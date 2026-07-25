@@ -1,0 +1,6 @@
+Recreate the attached reference ad (image 1) as a layout template: a single subject split into two halves for a before/after comparison, claim bar on top and a product-claims strip along the bottom. Realism protocol ON: real skin/scalp texture, natural lighting, no AI-smoothing; keep it the SAME woman on both halves.
+Show one woman's scalp part-line split down the middle: left half labeled "Before" with a wider sparse part; right half labeled "After" with a narrower, denser part.
+Top claim bar, exactly: "One scalp. 8 weeks apart."
+Bottom product-claims strip, exactly: "Heartleaf exosomes • Caffeine • 75% less shedding • Made for postpartum & menopause hair"
+The product is the LAVENTRA GROW:TURN AMPOULE (images 2+): a white squeeze tube with a built-in white comb/brush applicator tip. Reproduce its label faithfully: orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge "FOR HAIR SCALP CARE", and "100 ml / 3.38 fl. oz." Small tube resting in a bottom corner.
+Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.

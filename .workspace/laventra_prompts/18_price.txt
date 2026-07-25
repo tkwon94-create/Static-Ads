@@ -1,0 +1,6 @@
+Recreate the attached reference ad (image 1) as a layout template: product on one side, claim + price anchor on the other, with a struck-through price dropping to a deal price. Big-claim offer hero. US market: US dollar currency.
+The product is the LAVENTRA GROW:TURN AMPOULE (images 2+): a white squeeze tube with a built-in white comb/brush applicator tip. Reproduce its label faithfully: orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge "FOR HAIR SCALP CARE", and "100 ml / 3.38 fl. oz." Product on the left.
+Right side headline, exactly: "Less hair in the drain — for less than a coffee a week"
+Price anchor, exactly: original "$104.85" struck through, dropping to "$69.90", with a burnt-orange chip reading "BUY 2 GET 1 FREE".
+Small scarcity line under it, exactly: "Limited-time bundle".
+Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.

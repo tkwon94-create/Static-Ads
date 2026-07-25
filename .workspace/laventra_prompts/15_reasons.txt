@@ -1,0 +1,5 @@
+Recreate the attached reference ad (image 1) as a layout template: numbered reason chips pinned around the product hero. Preserve the numbered-chip geometry.
+The product is the LAVENTRA GROW:TURN AMPOULE (images 2+): a white squeeze tube with a built-in white comb/brush applicator tip. Reproduce its label faithfully: orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge "FOR HAIR SCALP CARE", and "100 ml / 3.38 fl. oz." Product hero centered.
+Top headline, exactly: "5 reasons this beat my $80 salon serum"
+Five numbered chips (1-5) pinned to the product reading exactly: "1. Exosome + caffeine scalp science", "2. Brush tip delivers to the root", "3. 75% less shedding in 4 weeks", "4. Made for postpartum & menopause hair", "5. Money-back guarantee".
+Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.
