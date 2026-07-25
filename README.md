@@ -8,12 +8,13 @@ The skill lives at [`.claude/skills/winning-statics/`](.claude/skills/winning-st
 
 - [`SKILL.md`](.claude/skills/winning-statics/SKILL.md) — the workflow: intake → plan → generation → quality control → iterate
 - [`references/LIBRARY.md`](.claude/skills/winning-statics/references/LIBRARY.md) — the 50-reference catalog across 9 families
-- [`GEMINI_SETUP.md`](.claude/skills/winning-statics/GEMINI_SETUP.md) — one-time API key setup (5 minutes) and troubleshooting
-- [`scripts/generate_static.py`](.claude/skills/winning-statics/scripts/generate_static.py) — stdlib-only generation script + self-test
+- [`GEMINI_SETUP.md`](.claude/skills/winning-statics/GEMINI_SETUP.md) — one-time Google API key setup (5 minutes) and troubleshooting
+- [`HIGGSFIELD_SETUP.md`](.claude/skills/winning-statics/HIGGSFIELD_SETUP.md) — alternative backend billed to your Higgsfield account (`HF_API_KEY`/`HF_API_SECRET`)
+- [`scripts/`](.claude/skills/winning-statics/scripts/) — stdlib-only generation scripts (Gemini and Higgsfield), each with a `--self-test`
 
 ## Quick start
 
-1. Follow `GEMINI_SETUP.md` once (free Google AI Studio account → API key → `GEMINI_API_KEY` env var → self-test).
+1. Set up one backend: `GEMINI_SETUP.md` (Google API key → `GEMINI_API_KEY`) or `HIGGSFIELD_SETUP.md` (Higgsfield key + secret → `HF_API_KEY`/`HF_API_SECRET`), then run the matching self-test.
 2. Open Claude Code and say something like: **"make me 20 statics for my product"**.
 3. The skill collects your product photo, website, site PDF snapshot, and angle; shows you the batch plan before spending anything; generates; quality-checks; and iterates on your winners.
 

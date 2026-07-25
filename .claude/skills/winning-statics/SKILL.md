@@ -1,6 +1,6 @@
 ---
 name: winning-statics
-description: Recreate proven, high-performing static image ads for the user's product using a library of 50 real winning statics (9 concept families) and Google's Nano Banana Pro image model. Use this skill whenever the user asks for static ads, image ads, ad creatives, statics, ad batches, before/after ads, testimonial ads, comparison ads, or anything like "make me N statics/ads for my product" — even if they don't name the skill. Requires the user's own GEMINI_API_KEY (see GEMINI_SETUP.md).
+description: Recreate proven, high-performing static image ads for the user's product using a library of 50 real winning statics (9 concept families) and Google's Nano Banana Pro image model. Use this skill whenever the user asks for static ads, image ads, ad creatives, statics, ad batches, before/after ads, testimonial ads, comparison ads, or anything like "make me N statics/ads for my product" — even if they don't name the skill. Generates on the user's own key — GEMINI_API_KEY (see GEMINI_SETUP.md) or a Higgsfield account via HF_API_KEY/HF_API_SECRET (see HIGGSFIELD_SETUP.md).
 ---
 
 # Winning-Statics
@@ -15,8 +15,12 @@ Every generation call sends the **actual reference image** to the model — it s
 
 - `references/` — the 50 winning reference statics, named `ref-NN-slug.png`
 - `references/LIBRARY.md` — the full catalog: 9 families, every reference's mechanism, when to use it, and its per-reference recreation notes. **Read this before planning any batch.**
-- `GEMINI_SETUP.md` — one-time API key setup walkthrough and error troubleshooting table
-- `scripts/generate_static.py` — generation script (stdlib only). Also runs the setup self-test: `python3 scripts/generate_static.py --self-test`
+- `GEMINI_SETUP.md` — one-time Google API key setup walkthrough and error troubleshooting table
+- `HIGGSFIELD_SETUP.md` — alternative backend billed to the user's Higgsfield account
+- `scripts/generate_static.py` — Gemini generation script (stdlib only). Self-test: `python3 scripts/generate_static.py --self-test`
+- `scripts/higgsfield_backend.py` — Higgsfield generation script (stdlib only). Self-test: `python3 scripts/higgsfield_backend.py --self-test`
+
+**Backend selection:** use Gemini when `GEMINI_API_KEY` is set; use Higgsfield when `HF_API_KEY`/`HF_API_SECRET` are set (the script rejects placeholder values and says so). If both are set, ask the user which account to bill. Cost framing differs: Gemini bills ~$0.13–0.14/image to their Google key; Higgsfield deducts account credits per generation (failed/moderated jobs are refunded by Higgsfield).
 
 ## The workflow, start to finish
 
@@ -47,7 +51,7 @@ Each image = reference static + user's product photo + precise swap instructions
 - Swap in the user's product, brand colors, headline, and market's spelling/currency.
 - Any text that must appear in the image is specified **verbatim in quotes** in the prompt — that is how Nano Banana Pro renders text most accurately.
 - Apply the protocols below (realism, localization, borrowed authority, testimonials).
-- Call `scripts/generate_static.py` per image (see the script's `--help`). The key comes from the `GEMINI_API_KEY` environment variable only — never ask for it in chat, never write it to a file.
+- Call the selected backend script per image (see each script's `--help`). Keys come from environment variables only (`GEMINI_API_KEY`, or `HF_API_KEY`/`HF_API_SECRET`) — never ask for them in chat, never write them to a file.
 
 ### Step 4 — Quality control
 
