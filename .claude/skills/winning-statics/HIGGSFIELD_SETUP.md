@@ -35,3 +35,11 @@ Your key and secret never go into the chat or into any file — the script reads
 | `MODEL ERROR: ... not found` | Run `--list-models`; set the right id via `--model` or `HIGGSFIELD_MODEL` |
 | `REQUEST ERROR (HTTP 422)` about images | The model wants hosted URLs — use `--image-url` with public https links |
 | `SAFETY BLOCK` | Rephrase the claim (health/medical wording most often) or switch reference |
+
+## Verified reality (July 2026)
+
+- **Nano Banana *Pro* is not on Higgsfield's developer API.** Generation runs on `nano-banana` (Google's image-edit model) or `seedream`. Text rendering on base Nano Banana is good but a notch below Pro — for the crispest headline/stat text, the Gemini backend (`GEMINI_API_KEY`, Nano Banana Pro direct from Google) is stronger.
+- **Image-to-image endpoint:** `POST /v1/text2image/{model}` with `{"params":{"prompt","input_images":[{"type":"image_url","image_url":URL}],"aspect_ratio"}}`; returns a job-set polled at `/v1/job-sets/{id}`; result at `jobs[0].results.raw.url`.
+- **Inputs must be public http(s) URLs** (data: URIs are rejected). Local files auto-upload via `/files/generate-upload-url`.
+- **A real User-Agent is required** or Cloudflare returns 403 (error 1010). The script sets one.
+- **Locked-down networks:** if your environment's egress policy allows `platform.higgsfield.ai` but blocks the S3 upload host / CloudFront result host, uploads and downloads fail even though generation works. Host inputs on a public URL (`--image-url`) and open the printed result URLs from an unrestricted machine — or run this skill locally.

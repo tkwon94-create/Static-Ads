@@ -1,0 +1,11 @@
+Recreate the attached reference ad (image 1) exactly as a layout template, replacing the person and product. Keep the reference's structure: a real person holding the product, a large serif customer quote across the top, and a small attribution bar with name/age and a micro trust row at the bottom.
+
+Person: a warm, natural-looking woman around 55-60 (menopause-age), real human skin with visible pores, fine lines, and natural imperfect lighting — absolutely no beauty-filter smoothing or plastic AI skin. She is holding the product and smiling gently at camera in a bright home bathroom setting.
+
+Product she holds (from images 2 and 3): the white LAVENTRA GROW:TURN AMPOULE squeeze tube with a built-in white comb applicator tip. Reproduce the label faithfully: orange serif "LAVENTRA", black "GROW:TURN AMPOULE", orange "FOR HAIR SCALP CARE" pill badge, "100 ml / 3.38 fl. oz."
+
+Top serif quote in dark charcoal, exactly: "My hair thinning and overall loss is significantly less — and I'm seeing new growth that's actually growing."
+
+Bottom attribution bar, exactly: "Debra R. — verified customer" on one line, and a small three-part trust row reading "4.8★ (2,381+ reviews)   •   Free shipping   •   Easy returns"
+
+Brand palette: warm cream and terracotta-peach accents, burnt orange for the brand name, dark charcoal text. US English spelling. Every quoted string spelled exactly as given. Photorealistic, premium, native social-proof feel. Square 1:1.
