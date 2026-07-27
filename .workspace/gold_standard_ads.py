@@ -87,10 +87,11 @@ def download(url):
     r=urllib.request.Request(url,headers={"User-Agent":UA})
     with urllib.request.urlopen(r,timeout=180) as resp: return resp.read()
 
-def gen_layout(num,pf,ref,usep,model,k,s):
+def gen_layout(num,pf,ref,usep,model,k,s,extra=""):
     prompt=open(f".workspace/laventra_prompts/{pf}.txt").read()
     imgs=[f"{RAW}/{REFDIR}/{ref}"]
     if usep: prompt+=PLACEHOLDER
+    if extra: prompt+="\n\n"+extra
     body={"params":{"prompt":prompt,"input_images":[{"type":"image_url","image_url":u} for u in imgs],"aspect_ratio":"1:1"}}
     js=api("POST",f"{BASE}/v1/text2image/{model}",k,s,body); sid=js["id"]
     for _ in range(120):
@@ -106,7 +107,10 @@ def is_magenta(r,g,b):
            (r>110 and g<r*0.55 and b>g and b-g>25 and r-g>60)
 
 def find_magenta(img):
-    """Largest connected magenta blob. Returns (mask 'L' image, bbox) or (None,None)."""
+    """Magenta placeholder mask. Every component above noise size is masked
+    (the model sometimes draws the placeholder in disconnected pieces, e.g. a
+    separate brush tip); the bbox for product placement comes from the largest.
+    Returns (mask 'L' image, bbox) or (None,None)."""
     im=img.convert("RGB"); px=im.load(); W,H=im.size
     mask=bytearray(W*H)
     for y in range(H):
@@ -114,7 +118,7 @@ def find_magenta(img):
         for x in range(W):
             r,g,b=px[x,y]
             if is_magenta(r,g,b): mask[row+x]=1
-    seen=bytearray(W*H); best=None
+    seen=bytearray(W*H); comps=[]
     for i in range(W*H):
         if mask[i] and not seen[i]:
             comp=[]; q=deque([i]); seen[i]=1
@@ -125,12 +129,16 @@ def find_magenta(img):
                     if 0<=nx<W and 0<=ny<H:
                         k=ny*W+nx
                         if mask[k] and not seen[k]: seen[k]=1; q.append(k)
-            if best is None or len(comp)>len(best): best=comp
-    if not best or len(best) < (W*H)//1000: return None,None  # stray pixels, not a placeholder
+            if len(comp) >= 200: comps.append(comp)
+    if not comps or max(len(c) for c in comps) < (W*H)//1000:
+        return None,None  # stray pixels, not a placeholder
+    best=max(comps,key=len)
     m=Image.new("L",(W,H),0); mp=m.load()
+    for comp in comps:
+        for j in comp: mp[j%W,j//W]=255
     minx,miny,maxx,maxy=W,H,-1,-1
     for j in best:
-        x=j%W; y=j//W; mp[x,y]=255
+        x=j%W; y=j//W
         if x<minx:minx=x
         if x>maxx:maxx=x
         if y<miny:miny=y
@@ -144,6 +152,35 @@ def find_magenta(img):
             if r>170 and r-g>40 and b>g and b-g>12 and g<r*0.78:
                 mp[x,y]=255
     return m,(minx,miny,maxx,maxy)
+
+def inpaint(img,mask):
+    """Fill masked pixels by multi-source BFS from the mask boundary, averaging
+    already-known neighbors — a smooth smear that blends into photo backgrounds
+    (a flat color patch is glaring there)."""
+    im=img.convert("RGB"); px=im.load(); W,H=im.size; mp=mask.load()
+    known=bytearray(W*H); q=deque()
+    for y in range(H):
+        row=y*W
+        for x in range(W):
+            if not mp[x,y]: known[row+x]=1
+    for y in range(H):
+        for x in range(W):
+            if known[y*W+x]:
+                for nx,ny in ((x+1,y),(x-1,y),(x,y+1),(x,y-1)):
+                    if 0<=nx<W and 0<=ny<H and not known[ny*W+nx]:
+                        q.append((x,y)); break
+    while q:
+        x,y=q.popleft()
+        for nx,ny in ((x+1,y),(x-1,y),(x,y+1),(x,y-1)):
+            if 0<=nx<W and 0<=ny<H and not known[ny*W+nx]:
+                rs=gs=bs=n=0
+                for ax,ay in ((nx+1,ny),(nx-1,ny),(nx,ny+1),(nx,ny-1)):
+                    if 0<=ax<W and 0<=ay<H and known[ay*W+ax]:
+                        r,g,b=px[ax,ay]; rs+=r; gs+=g; bs+=b; n+=1
+                if n:
+                    px[nx,ny]=(rs//n,gs//n,bs//n)
+                    known[ny*W+nx]=1; q.append((nx,ny))
+    return im
 
 def prep_product(prod_img):
     """Make the background transparent by flood-filling near-white from the image
@@ -173,21 +210,8 @@ def composite(layout_bytes,product,out_path):
     l,t,r,b=box; bw,bh=r-l+1,b-t+1; W,H=layout.size
     # dilate the mask a few px to swallow anti-aliased magenta fringes
     mask=mask.filter(ImageFilter.MaxFilter(9))
-    # fill color = per-channel median of clean pixels in a ring around the blob
-    ring=[]; rgb=layout.convert("RGB"); rp=rgb.load(); mp=mask.load()
-    for pad in (14,22,30):
-        for x in range(max(0,l-pad),min(W,r+pad+1),3):
-            for y in (max(0,t-pad),min(H-1,b+pad)):
-                if not mp[x,y]: ring.append(rp[x,y])
-            for y2 in range(max(0,t-pad),min(H,b+pad+1),3):
-                for x2 in (max(0,l-pad),min(W-1,r+pad)):
-                    if not mp[x2,y2]: ring.append(rp[x2,y2])
-    if ring:
-        ring.sort(key=lambda c:sum(c)); fill=ring[len(ring)//2]
-    else:
-        fill=(245,240,232)
-    # replace only the magenta pixels with the background tone (keeps droplets/dots)
-    base=Image.composite(Image.new("RGBA",(W,H),fill+(255,)),layout,mask)
+    # fill the masked pixels by inpainting from their surroundings
+    base=inpaint(layout,mask).convert("RGBA")
     prod=prep_product(product)
     scale=min(bw/prod.width,bh/prod.height)
     nw,nh=max(1,int(prod.width*scale)),max(1,int(prod.height*scale))
@@ -201,6 +225,7 @@ def main():
     ap.add_argument("--out",default="out")
     ap.add_argument("--model",default="nano-banana")
     ap.add_argument("--only",default="")
+    ap.add_argument("--extra",default="",help="extra instruction appended to every prompt")
     a=ap.parse_args()
     k,s=creds(); os.makedirs(a.out,exist_ok=True)
     product=Image.open(a.product)
@@ -208,7 +233,7 @@ def main():
     for num,pf,ref,usep in ADS:
         if only and num not in only: continue
         print(f"#{num} {pf} ...")
-        layout=gen_layout(num,pf,ref,usep,a.model,k,s)
+        layout=gen_layout(num,pf,ref,usep,a.model,k,s,a.extra)
         if layout is None: continue
         out=os.path.join(a.out,f"laventra_{num}_{pf}.png")
         if usep:
