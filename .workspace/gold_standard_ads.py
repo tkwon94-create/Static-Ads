@@ -151,7 +151,7 @@ def find_magenta(img):
     for y in range(max(0,miny-pad),min(H,maxy+pad+1)):
         for x in range(max(0,minx-pad),min(W,maxx+pad+1)):
             r,g,b=px[x,y]
-            if r>170 and r-g>40 and b>g and b-g>12 and g<r*0.78:
+            if r>170 and r-g>40 and b>g and b-g>20 and g<r*0.78:
                 mp[x,y]=255
     return m,(minx,miny,maxx,maxy)
 

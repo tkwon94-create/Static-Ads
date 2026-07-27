@@ -115,7 +115,12 @@ def upload(path, key, secret):
     info = api("POST", f"{BASE}/files/generate-upload-url", key, secret, body={"content_type": ct})
     with open(path, "rb") as f:
         blob = f.read()
-    api("PUT", info["upload_url"], key, secret, raw_body=blob, content_type=ct)
+    # presigned S3 PUT: the URL carries its own auth; adding the Higgsfield
+    # Authorization header makes S3 reject with "Only one auth mechanism allowed"
+    req = urllib.request.Request(info["upload_url"], data=blob,
+        headers={"Content-Type": ct, "User-Agent": USER_AGENT}, method="PUT")
+    with urllib.request.urlopen(req, timeout=300) as resp:
+        resp.read()
     return info["public_url"]
 
 
