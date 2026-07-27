@@ -60,11 +60,13 @@ ADS = [
 ]
 
 PLACEHOLDER = ("\n\nPRODUCT PLACEHOLDER — IMPORTANT: Do NOT draw the product tube or any "
-    "product at all. In the exact position, size, and orientation where the product "
-    "should appear, paint a single SOLID FLAT #FF00FF magenta shape (pure magenta, no "
-    "gradient, no text, no shadow on it) as a placeholder for the product. Render "
-    "everything else — headlines, body text, people, icons, background — normally and "
-    "completely. The magenta shape must be the only magenta in the whole image.")
+    "product at all — not even a different bottle, jar, or stylized product. In the exact "
+    "position, size, and orientation where the product should appear, paint a single SOLID "
+    "FLAT pure magenta shape (maximum red, zero green, maximum blue; no gradient, no text, "
+    "no shadow on it) as a placeholder for the product. Render everything else — headlines, "
+    "body text, people, icons, background — normally and completely. The magenta shape must "
+    "be the only magenta in the whole image. Never write any color name or hex code as "
+    "visible text anywhere.")
 
 def creds():
     k=os.environ.get("HF_API_KEY","").strip(); s=os.environ.get("HF_API_SECRET","").strip()
@@ -235,6 +237,8 @@ def main():
         print(f"#{num} {pf} ...")
         layout=gen_layout(num,pf,ref,usep,a.model,k,s,a.extra)
         if layout is None: continue
+        ldir=os.path.join(a.out,"layouts"); os.makedirs(ldir,exist_ok=True)
+        open(os.path.join(ldir,f"laventra_{num}_{pf}.layout.png"),"wb").write(layout)
         out=os.path.join(a.out,f"laventra_{num}_{pf}.png")
         if usep:
             ok=composite(layout,product,out)
