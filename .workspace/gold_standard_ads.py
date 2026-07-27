@@ -24,8 +24,9 @@ What it does per ad:
   5. Saves the final ad — product is your exact pixels, everything else generated.
 """
 import argparse, json, os, sys, time, urllib.request, urllib.error, io
+from collections import deque
 try:
-    from PIL import Image
+    from PIL import Image, ImageFilter
 except ImportError:
     sys.exit("Pillow is required: pip install pillow")
 
@@ -98,50 +99,100 @@ def gen_layout(num,pf,ref,usep,model,k,s):
         if job["status"] in ("failed","nsfw"): print(f"  #{num} layout {job['status']}"); return None
     print(f"  #{num} layout timeout"); return None
 
-def magenta_bbox(img):
-    """Return (l,t,r,b) of the pure-magenta placeholder, or None."""
+def is_magenta(r,g,b):
+    # strict pure magenta OR shaded crimson-magenta (models often draw the
+    # placeholder as a magenta-colored 3D product with shading)
+    return (r>180 and b>180 and g<110) or \
+           (r>110 and g<r*0.55 and b>g and b-g>25 and r-g>60)
+
+def find_magenta(img):
+    """Largest connected magenta blob. Returns (mask 'L' image, bbox) or (None,None)."""
     im=img.convert("RGB"); px=im.load(); W,H=im.size
-    minx,miny,maxx,maxy=W,H,-1,-1
-    step=max(1,min(W,H)//400)
-    for y in range(0,H,step):
-        for x in range(0,W,step):
+    mask=bytearray(W*H)
+    for y in range(H):
+        row=y*W
+        for x in range(W):
             r,g,b=px[x,y]
-            if r>180 and b>180 and g<110:  # magenta-ish
-                if x<minx:minx=x
-                if x>maxx:maxx=x
-                if y<miny:miny=y
-                if y>maxy:maxy=y
-    if maxx<0: return None
-    return (minx,miny,maxx,maxy)
+            if is_magenta(r,g,b): mask[row+x]=1
+    seen=bytearray(W*H); best=None
+    for i in range(W*H):
+        if mask[i] and not seen[i]:
+            comp=[]; q=deque([i]); seen[i]=1
+            while q:
+                j=q.popleft(); comp.append(j)
+                x=j%W; y=j//W
+                for nx,ny in ((x+1,y),(x-1,y),(x,y+1),(x,y-1)):
+                    if 0<=nx<W and 0<=ny<H:
+                        k=ny*W+nx
+                        if mask[k] and not seen[k]: seen[k]=1; q.append(k)
+            if best is None or len(comp)>len(best): best=comp
+    if not best or len(best) < (W*H)//1000: return None,None  # stray pixels, not a placeholder
+    m=Image.new("L",(W,H),0); mp=m.load()
+    minx,miny,maxx,maxy=W,H,-1,-1
+    for j in best:
+        x=j%W; y=j//W; mp[x,y]=255
+        if x<minx:minx=x
+        if x>maxx:maxx=x
+        if y<miny:miny=y
+        if y>maxy:maxy=y
+    # second pass: inside the blob's neighborhood, sweep up lighter pink shading
+    # (highlights on the drawn placeholder) that the strict threshold missed
+    pad=24
+    for y in range(max(0,miny-pad),min(H,maxy+pad+1)):
+        for x in range(max(0,minx-pad),min(W,maxx+pad+1)):
+            r,g,b=px[x,y]
+            if r>170 and r-g>40 and b>g and b-g>12 and g<r*0.78:
+                mp[x,y]=255
+    return m,(minx,miny,maxx,maxy)
 
 def prep_product(prod_img):
-    """Trim near-white background to transparent, autocrop."""
+    """Make the background transparent by flood-filling near-white from the image
+    borders only — a white product body stays opaque. Then autocrop."""
     im=prod_img.convert("RGBA"); px=im.load(); W,H=im.size
+    def bg(x,y):
+        r,g,b,a=px[x,y]; return r>=249 and g>=249 and b>=249
+    seen=bytearray(W*H); q=deque()
+    for x in range(W):
+        for y in (0,H-1):
+            if bg(x,y) and not seen[y*W+x]: seen[y*W+x]=1; q.append((x,y))
     for y in range(H):
-        for x in range(W):
-            r,g,b,a=px[x,y]
-            if r>244 and g>244 and b>244: px[x,y]=(r,g,b,0)
+        for x in (0,W-1):
+            if bg(x,y) and not seen[y*W+x]: seen[y*W+x]=1; q.append((x,y))
+    while q:
+        x,y=q.popleft(); px[x,y]=(255,255,255,0)
+        for nx,ny in ((x+1,y),(x-1,y),(x,y+1),(x,y-1)):
+            if 0<=nx<W and 0<=ny<H and not seen[ny*W+nx] and bg(nx,ny):
+                seen[ny*W+nx]=1; q.append((nx,ny))
     return im.crop(im.getbbox() or (0,0,W,H))
 
 def composite(layout_bytes,product,out_path):
     layout=Image.open(io.BytesIO(layout_bytes)).convert("RGBA")
-    box=magenta_bbox(layout)
-    if box is None:
+    mask,box=find_magenta(layout)
+    if mask is None:
         layout.convert("RGB").save(out_path); return False
-    l,t,r,b=box; bw,bh=r-l,b-t
+    l,t,r,b=box; bw,bh=r-l+1,b-t+1; W,H=layout.size
+    # dilate the mask a few px to swallow anti-aliased magenta fringes
+    mask=mask.filter(ImageFilter.MaxFilter(9))
+    # fill color = per-channel median of clean pixels in a ring around the blob
+    ring=[]; rgb=layout.convert("RGB"); rp=rgb.load(); mp=mask.load()
+    for pad in (14,22,30):
+        for x in range(max(0,l-pad),min(W,r+pad+1),3):
+            for y in (max(0,t-pad),min(H-1,b+pad)):
+                if not mp[x,y]: ring.append(rp[x,y])
+            for y2 in range(max(0,t-pad),min(H,b+pad+1),3):
+                for x2 in (max(0,l-pad),min(W-1,r+pad)):
+                    if not mp[x2,y2]: ring.append(rp[x2,y2])
+    if ring:
+        ring.sort(key=lambda c:sum(c)); fill=ring[len(ring)//2]
+    else:
+        fill=(245,240,232)
+    # replace only the magenta pixels with the background tone (keeps droplets/dots)
+    base=Image.composite(Image.new("RGBA",(W,H),fill+(255,)),layout,mask)
     prod=prep_product(product)
     scale=min(bw/prod.width,bh/prod.height)
     nw,nh=max(1,int(prod.width*scale)),max(1,int(prod.height*scale))
     prod=prod.resize((nw,nh),Image.LANCZOS)
-    # cover the magenta with the layout's background tone first, then paste product centered
-    base=layout.copy()
-    # sample a background pixel just outside the box for fill
-    bx=min(base.width-1,r+3); fill=base.convert("RGB").getpixel((bx,max(0,t)))
-    for yy in range(t,b+1):
-        for xx in range(l,r+1):
-            base.putpixel((xx,yy),fill+(255,))
-    px_off=(l+(bw-nw)//2, t+(bh-nh)//2)
-    base.alpha_composite(prod,px_off)
+    base.alpha_composite(prod,(l+(bw-nw)//2, t+(bh-nh)//2))
     base.convert("RGB").save(out_path); return True
 
 def main():
