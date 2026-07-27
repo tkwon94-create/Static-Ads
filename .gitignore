@@ -3,3 +3,4 @@ __pycache__/
 self_test_output.png
 .workspace/out_nb2/
 .workspace/out_sd/
+.workspace/out2/
