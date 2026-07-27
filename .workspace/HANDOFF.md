@@ -7,29 +7,28 @@ environment that can reach image APIs and download results (this local machine c
 the web sandbox couldn't, which is why this was handed off).
 
 ## The one hard problem to solve
-Base Nano Banana / Seedream **redraw and garble the product tube's label**. Two good fixes,
-both work locally:
+Base Nano Banana / Seedream **redraw and garble the product tube's label**. The user has
+ONLY a Higgsfield key (no Google/Gemini key), so use the gold-standard composite path,
+which needs nothing but Higgsfield:
 
-**Option A — Nano Banana Pro (recommended, best all-round quality).**
-- Get a Google AI Studio key (`GEMINI_API_KEY`). Google's API is reachable locally and
-  returns the image **inline** (base64) — so you can view, QC, and save real files.
-- Use `.claude/skills/winning-statics/scripts/generate_static.py` (already written for
-  the Gemini image API). Model: `gemini-3-pro-image-preview` (Nano Banana Pro).
-- Feed each reference + the product photo; it renders text far better than base models.
+**PRIMARY PATH — Gold standard, pixel-perfect product (Higgsfield only).**
+- `.workspace/gold_standard_ads.py` (needs `pip install pillow`). For each ad it has
+  Higgsfield generate ONLY the layout (background + text) with a **magenta placeholder**
+  where the product goes — no tube drawn — then downloads it and composites the REAL
+  product PNG into that zone. The tube is your exact pixels, never redrawn or re-lettered.
+- Uses `HF_API_KEY`/`HF_API_SECRET` only. Model `nano-banana` (or `seedream`).
+- IMPORTANT: the magenta-detect/composite step was written but never runnable in the
+  sandbox (no image download there). **Test on ad #16 first, view the result, and fix the
+  magenta-bbox / scale / background-trim logic as needed** before running all 20. Iterate
+  with your own eyes — that's the whole advantage of running locally.
+- Remaining weakness: the layout's OWN text (headlines, stat numbers) is still rendered by
+  base Nano Banana and may have minor garbling. Regenerate any weak layout (cheap), or
+  tighten its prompt. The PRODUCT itself will always be perfect since it's composited.
 
-**Option B — Gold standard, pixel-perfect product.**
-- `.workspace/gold_standard_ads.py` (needs `pip install pillow`). It generates each
-  layout on Higgsfield with a **magenta placeholder** where the product goes (no tube
-  drawn), downloads it, and composites the REAL product PNG into that zone. So the tube
-  is exact pixels, never redrawn.
-- NOTE: the magenta-detect/composite step was written but never runnable in the sandbox
-  (no image download there) — **test it on ad #16 first, view the result, and fix the
-  bbox/scale logic as needed** before running all 20.
-- Higgsfield billed to `HF_API_KEY`/`HF_API_SECRET`. Model `nano-banana` or `seedream`.
-
-Best of both: run Option A for the no-product concepts and Option B for the
-product-hero ones — or just do Option A everywhere and only fall back to B if a
-specific tube still looks wrong.
+**Optional upgrade (only if the user later gets a Google key):** Nano Banana Pro via
+`GEMINI_API_KEY` + `.claude/skills/winning-statics/scripts/generate_static.py`
+(`gemini-3-pro-image-preview`) renders in-layout text far better. Not required — the
+gold-standard path already gives a perfect product without it.
 
 ## Assets already in the repo
 - Product photo (label already corrected to "(V)BioExo-Water(Heartleaf)"):
