@@ -1,0 +1,9 @@
+Recreate the attached reference ad (image 1) with a new product. Keep the reference's exact layout skeleton: one dominant headline at top, hero product floating in the center against a soft background, and a horizontal three-stat strip along the bottom.
+The product is the LAVENTRA GROW:TURN AMPOULE (images 2+): a white squeeze tube with a built-in white comb/brush applicator tip. Reproduce its label faithfully: orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge "FOR HAIR SCALP CARE", and "100 ml / 3.38 fl. oz." Show the tube floating at a slight angle with the brush tip visible, with a few droplets of clear serum, on a soft cream background with subtle terracotta sparkle dots.
+Headline at top in bold dark charcoal sans-serif, exactly: "The postpartum shedding fix that lives in your shower"
+Bottom stat strip: three stats separated by thin vertical dividers, numbers in burnt orange bold, labels in dark gray, exactly:
+"75.61%" with label "less hair shedding in 4 weeks"
+"89.04%" with label "less scalp flakiness"
+"113.70%" with label "more scalp hydration"
+Below the stat strip in small light-gray text, exactly: "Based on clinical testing. Individual results may vary."
+Clean, premium K-beauty aesthetic. Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.

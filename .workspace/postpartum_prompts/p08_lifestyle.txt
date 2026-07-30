@@ -1,0 +1,6 @@
+Recreate the attached reference ad (image 1) as a layout template: a warm lifestyle scene with a first-person text overlay in a casual sans-serif, native social feel. Realism ON: natural light, real textures, no smoothing.
+Scene: a bright morning bathroom counter, soft towel, the product standing near the sink; no people or only a partial hand.
+The product is the LAVENTRA GROW:TURN AMPOULE (images 2+): a white squeeze tube with a built-in white comb/brush applicator tip. Reproduce its label faithfully: orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge "FOR HAIR SCALP CARE", and "100 ml / 3.38 fl. oz."
+First-person overlay text in the upper third, exactly: "4 months postpartum — my drain is finally clear again."
+Small tag lower corner, exactly: "LAVENTRA Grow:Turn"
+Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.
