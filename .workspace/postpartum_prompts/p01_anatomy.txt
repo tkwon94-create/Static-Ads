@@ -1,6 +1,6 @@
 Recreate the attached reference ad (image 1) as a layout template: an educational anatomy self-diagnosis diagram with a concern headline, no product shown. Problem-agitation, product absent.
-Subject: a clean medical-style illustration of a woman's head in profile with a scalp cross-section inset showing hair follicles, drawn in warm neutral tones.
-Top headline, exactly: "Why your hair sheds like crazy 3 months after birth"
+Subject: a clean, friendly infographic-style illustration of the hair growth cycle — three simple follicle icons labeled visually as growing, resting, and regrowing — warm neutral tones, educational and calm.
+Top headline, exactly: "Why hair sheds so much in month 3 after birth"
 Tease line below, exactly: "The estrogen cliff, explained — and the 4-week scalp reset."
 Burnt-orange arrow CTA, exactly: "See how it works →"
 No brand logo. Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.
