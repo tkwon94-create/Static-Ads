@@ -15,6 +15,7 @@ Every generation call sends the **actual reference image** to the model — it s
 
 - `references/` — the 50 winning reference statics, named `ref-NN-slug.png`
 - `references/LIBRARY.md` — the full catalog: 9 families, every reference's mechanism, when to use it, and its per-reference recreation notes. **Read this before planning any batch.**
+- `references/TRAINING.md` — the Master Training Document: the deep version of this skill's guidance. Read the relevant section when LIBRARY.md's condensed notes aren't enough — extended per-reference mechanism/recreation notes (Part 5), input-quality guidance (Part 6), and troubleshooting (Part 7).
 - `GEMINI_SETUP.md` — one-time Google API key setup walkthrough and error troubleshooting table
 - `HIGGSFIELD_SETUP.md` — alternative backend billed to the user's Higgsfield account
 - `scripts/generate_static.py` — Gemini generation script (stdlib only). Self-test: `python3 scripts/generate_static.py --self-test`
