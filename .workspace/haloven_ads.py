@@ -9,18 +9,18 @@ from PIL import Image
 
 # num, prompt file, reference, uses_product, aspect_ratio
 ADS = [
- ("h01","h01_quote_hero",     "ref-40-oversized-quote-lead.png",        True, "4:5"),
- ("h02","h02_whiteboard",     "ref-38-expert-whiteboard-checklist.png", True, "4:5"),
+ ("h01","h01_quote_hero",     "ref-40-oversized-quote-lead.png",        True, "3:4"),
+ ("h02","h02_whiteboard",     "ref-38-expert-whiteboard-checklist.png", True, "3:4"),
  ("h03","h03_test_grid",      "ref-04-ranked-test-grid.png",            True, "1:1"),
- ("h04","h04_timestamp",      "ref-30-problem-fix-result.png",          True, "4:5"),
- ("h05","h05_comment_reply",  "ref-46-story-ama-frame.png",             True, "4:5"),
- ("h06","h06_pov_callouts",   "ref-25-lifestyle-first-person-overlay.png", True, "4:5"),
+ ("h04","h04_timestamp",      "ref-30-problem-fix-result.png",          True, "3:4"),
+ ("h05","h05_comment_reply",  "ref-46-story-ama-frame.png",             True, "3:4"),
+ ("h06","h06_pov_callouts",   "ref-25-lifestyle-first-person-overlay.png", True, "3:4"),
  ("h07","h07_dont_try",       "ref-47-objection-kill-split.png",        True, "1:1"),
  ("h08","h08_marker",         "ref-32-hand-drawn-marker-annotation.png", True, "1:1"),
- ("h09","h09_time_promise",   "ref-50-benefit-checklist-portrait.png",  True, "4:5"),
+ ("h09","h09_time_promise",   "ref-50-benefit-checklist-portrait.png",  True, "3:4"),
  ("h10","h10_selfie_checklist","ref-19-portrait-quote-attribution.png", True, "1:1"),
- ("h11","h11_dark_hero",      "ref-02-claim-stat-strip.png",            True, "4:5"),
- ("h12","h12_poster",         "ref-06-authority-private-notes.png",     True, "4:5"),
+ ("h11","h11_dark_hero",      "ref-02-claim-stat-strip.png",            True, "3:4"),
+ ("h12","h12_poster",         "ref-06-authority-private-notes.png",     True, "3:4"),
 ]
 
 def gen(num, pf, ref, usep, ar, model, k, s, extra):
