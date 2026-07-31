@@ -1,0 +1,12 @@
+Recreate the attached reference ad (image 1) as a layout template: a real selfie of a woman holding the product beside her face, with a dark rounded caption chip at the top and six dark rounded checklist chips stacked down the lower half. Native UGC selfie feel. Realism protocol ON: natural skin with visible pores and texture, real indoor window light, absolutely no beauty-filter smoothing.
+Person: a warm, natural-looking woman aged about 32 — a new mother — smiling gently at the camera in a cozy living room with soft daylight from a window. She holds the product up beside her face.
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz."
+Dark rounded caption chip across the top with white text, exactly: "I started this after my 3-month shed and now I..."
+Six dark rounded chips stacked down the lower half, each beginning with a green check mark, white text, reading exactly:
+"Don't dread the shower drain"
+"Stopped hiding my part with powder"
+"Skip the dry shampoo most days"
+"Wear my hair down again"
+"Feel my baby hairs growing back"
+"Actually look forward to wash day"
+BRAND COLORS — use these exact hex values: primary peach/terracotta #E8B093, brand orange #C14201, badge orange #B95618, text near-black #000000, product white #F5F5F6, background white #FFFFFF. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
