@@ -1,6 +1,5 @@
-Recreate the attached reference ad (image 1) as a layout template: an educational anatomy self-diagnosis diagram with a concern headline, no product shown. Problem-agitation, product absent.
-Subject: a clean, friendly infographic-style illustration of the hair growth cycle — three simple follicle icons labeled visually as growing, resting, and regrowing — warm neutral tones, educational and calm.
-Top headline, exactly: "Why hair sheds so much in month 3 after birth"
-Tease line below, exactly: "The estrogen cliff, explained — and the 4-week scalp reset."
-Burnt-orange arrow CTA, exactly: "See how it works →"
-No brand logo. Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.
+Recreate the attached reference ad (image 1) as a layout template: a bold two-panel educational split that contrasts a common belief with the real cause. Problem-agitation, product absent, no people.
+Left panel labeled with a header, exactly: "What you think". Below it, simple friendly icons of a hairbrush and a shampoo bottle with a small line under them, exactly: "Bad shampoo. Bad genes."
+Right panel labeled with a header, exactly: "What's actually happening". Below it, a simple warm-toned illustration of three hair strands in a scalp, one lifting away, with a small line under it, exactly: "Estrogen drops. Follicles rest. Hair sheds."
+Bottom band headline across the full width, exactly: "Month 3 after birth is when it peaks"
+Keep it clean, calm and infographic-like — friendly educational illustration, not clinical or graphic, no medical cross-sections, no blood, no skin close-ups. No brand logo. Brand palette: warm cream/white background, terracotta-peach accents, burnt orange for the "LAVENTRA" brand name and numbers, dark charcoal text. US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter. Square 1:1 composition.

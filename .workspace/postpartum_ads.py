@@ -8,10 +8,10 @@ gsa = importlib.util.module_from_spec(spec); spec.loader.exec_module(gsa)
 from PIL import Image
 
 ADS = [
- ("p01","p01_anatomy","ref-09-anatomy-self-diagnosis.png",False),
+ ("p01","p01_anatomy","ref-49-shock-education-split.png",False),
  ("p02","p02_follicle","ref-22-visceral-organ-concern.png",False),
  ("p03","p03_blame","ref-01-two-figure-blame-reframe.png",True),
- ("p04","p04_ama","ref-46-story-ama-frame.png",True),
+ ("p04","p04_ama","ref-40-oversized-quote-lead.png",True),
  ("p05","p05_postit","ref-14-post-it-handwritten-note.png",True),
  ("p06","p06_portrait","ref-19-portrait-quote-attribution.png",True),
  ("p07","p07_editorial","ref-03-cultural-secret-long-headline.png",True),
