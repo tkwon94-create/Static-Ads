@@ -1,0 +1,63 @@
+Recreate the attached reference ad (image 1) as a layout template: a clean 3x3 grid of nine photo cells, each cell a hand holding one product toward the camera, with a small badge pinned in the corner of every cell.
+
+ATMOSPHERE: dispassionate editorial product-test photography, like a magazine round-up. Soft, even, shadowless light across all nine cells; a plain warm-neutral wall behind every hand; identical camera distance, identical hand position, identical product scale in each cell so the grid reads as one controlled test rather than nine stock photos. In each cell the same woman's face is visible but softly out of focus behind the product she is holding — present, not the subject. Thin white gutters separate the cells. Calm, clinical, evidence-like. No lifestyle styling, no props, no color grading tricks.
+
+Bold black headline across the very top, exactly: "WE TRIED 9 POSTPARTUM HAIR FIXES FOR 30 DAYS"
+
+Eight cells hold GENERIC unbranded products with plain white labels — no brand names, no logos, no readable text beyond the one label word given here. Their plain labels read exactly, one per cell: "Dry Shampoo", "Biotin Gummies", "Volume Powder", "Scalp Massager", "Rosemary Oil", "Hair Vitamins", "Thickening Spray", "Silk Pillowcase". Each of these eight cells carries a small round white badge in its lower-left corner with a hand-drawn grey X inside.
+
+The ninth cell, bottom-right, is outlined with a thick brand-orange border and washed with a soft peach tint so it reads as the winner at a glance. It holds the product. The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. Its badge is a filled brand-orange circle in the lower-left corner with a white check mark inside.
+
+Directly beneath the ninth cell, a short label exactly: "The only one that treats the scalp"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly nine cells, three across and three down. Each of the eight generic labels appears exactly ONCE and only inside its own cell. No brand names, no logos, no score numbers, no extra captions, no text of any kind inside the cells beyond the eight plain labels named above.
+
+THE EIGHT COMPARISON PRODUCTS — CRITICAL, THIS REPLACES THE LABEL DESCRIPTION ABOVE.
+Do NOT draw plain white bottles with blank white rectangles stuck on them. That reads
+as an unfinished mockup. Each of the eight is a REAL-LOOKING RETAIL PRODUCT that a
+person actually bought: correct form factor, correct materials, correct finish, and a
+properly printed label that wraps the container and follows its curve.
+
+Give each one the packaging its category really has:
+- Dry Shampoo: a tall aerosol can, matte finish, plastic cap, spray nozzle
+- Biotin Gummies: a wide amber or white plastic jar, screw lid, gummies visible inside
+- Volume Powder: a small shaker bottle with a perforated sifter top
+- Scalp Massager: a handheld silicone-bristle scalp brush, no bottle at all
+- Rosemary Oil: a small amber glass dropper bottle with a black dropper cap
+- Hair Vitamins: a supplement bottle with a printed wrap label and a white lid
+- Thickening Spray: a slim pump-spray bottle with a fine-mist trigger
+- Silk Pillowcase: a folded satin pillowcase, soft sheen, visible fabric fold
+
+Each product's printed label carries ONLY its category name from the list above, set
+in ordinary small product typography as part of the printed label — never as a floating
+white box, never as a caption laid over the photo. Invent NO brand names, NO logos, NO
+slogans and NO other words. The packaging designs are plain and generic: simple type,
+one or two muted colors, nothing resembling any real-world brand.
+
+
+PRODUCT PLACEHOLDER — THIS OVERRIDES EVERY OTHER INSTRUCTION ABOUT THE PRODUCT.
+Do NOT draw the product tube, its label, its wordmark, its badge or its brush tip.
+Wherever the product should appear, paint a SOLID FLAT PURE MAGENTA shape instead
+(maximum red, zero green, maximum blue).
+
+SHAPE: upright, taller than wide, in the proportion 4 wide by 5 tall.
+
+SEATING: the magenta shape is held in the hand in the bottom-right cell, at the same scale and angle as the products in the other eight cells, with the fingers wrapping it naturally and drawn on top of it.
+
+FLATNESS: the magenta is completely flat — no gradient, no shading, no highlight, no
+reflection in any glossy surface, no drop shadow and no contact shadow. Nearby
+surfaces keep their own natural color and reflect nothing. Its edges are hard.
+
+OCCLUSION — IMPORTANT: anything that would realistically pass IN FRONT of the product
+must still be drawn in front of it, over the magenta. Fingers gripping it wrap around
+its edges and are drawn fully, in natural skin tone, on top of the magenta shape.
+Draw those fingers completely and realistically; they are not magenta.
+
+This magenta shape must be the only magenta anywhere in the image. Nothing else in
+the frame may be magenta, pink, purple or violet.

@@ -1,0 +1,83 @@
+Recreate the attached reference ad (image 1) as a layout template: an environmental portrait of a woman holding the product at chest height, with a large serif quote across the top, a small attribution line beneath it, and a thin trust line at the very bottom.
+
+ATMOSPHERE: filmic and documentary — a real person photographed in her own home, not a model in a studio. Warm natural light comes from a window or doorway at one side, falling across her face and leaving the depth of the room soft behind her: a hallway, a doorframe, the ordinary domestic clutter of a house with a baby in it, all gently out of focus. Slight film grain, warm midtones, natural falloff into shadow. She looks directly at the camera, calm and unperformed. The quote sits over the darker upper area of the photograph in off-white.
+
+Realism protocol ON: a woman aged 30 — early thirties, a new mother, smooth youthful face with NO wrinkles, NO crow's feet and NO gray hair, long healthy brown hair. Natural skin with visible pores and real texture, real window light, absolutely no beauty-filter smoothing and no glamour retouching.
+
+TYPE TREATMENT: the quote is a large off-white serif with curly quotation marks, set across the top on two lines. The attribution beneath is small, letter-spaced caps. The bottom line is small letter-spaced caps in off-white.
+
+Large serif quote across the top, exactly two lines: "I stopped dreading the shower drain." then "That's the whole review."
+
+Small attribution line directly beneath the quote in letter-spaced caps, exactly: "★★★★★  VERIFIED CUSTOMER  ·  4.8 RATED"
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. She holds the tube at chest height, turned so the label faces the camera, both hands relaxed.
+
+Thin line of small letter-spaced caps across the very bottom, exactly: "FREE SHIPPING  ·  EASY RETURNS  ·  THOUSANDS OF NEW MOMS"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: the image contains ONLY the two quote lines, the one attribution line and the one bottom line. Each appears exactly ONCE. No checklist chips, no badges, no logo, no button, no caption block. The woman must look about 30 years old — a young mother, not a middle-aged woman.
+
+BRAND GROUND — THIS OVERRIDES THE ENVIRONMENT DESCRIPTION ABOVE.
+The room she stands in is painted a warm peach — the brand's primary peach, a soft
+dusty terracotta-pink — and the light falling through the window is warm, so the
+walls, the hallway behind her and the depth of the room all read peach. Keep the
+photograph filmic and documentary, keep the real domestic clutter, keep her skin
+natural and unretouched. Her sweater is a plain soft cream that sits quietly against
+the peach. The quote type stays off-white and must remain clearly legible against the
+warmer ground — place it over the deeper, more shadowed part of the wall. Peach must
+be the single most dominant color in the finished image.
+
+
+PHOTOGRAPHIC REALISM — CRITICAL, THIS IS THE MAIN THING BEING FIXED. The previous
+version read as an AI portrait: too smooth, too symmetrical, too evenly lit, expression
+blank. This must look like an actual photograph taken of an actual person.
+
+Shoot it like a real photograph with real imperfections:
+- Skin is genuinely textured and uneven — visible pores, a little redness around the
+  nose and cheeks, faint under-eye shadow, a blemish or two, fine lines at the eyes
+  when she smiles. Absolutely no retouching, no smoothing, no glow, no even-toned
+  complexion.
+- Her face is ASYMMETRIC, as real faces are, and she is NOT perfectly centered on the
+  lens axis — turned very slightly off-square to the camera.
+- Expression is a real, half-caught in-between moment — a small tired, genuine smile
+  rather than a held pose or a blank neutral stare. She looks like a person who has
+  been up since 5am with a baby.
+- Hair is not uniform: stray flyaways catching the window light, a few strands out of
+  place, natural uneven parting.
+- Lighting is directional and UNEVEN — strong soft daylight from the window at the
+  left, the right side of her face falling into gentle shadow. Not beauty lighting, not
+  flat fill. Allow slight underexposure in the shadows.
+- Shot on a 35mm lens at f/2 on a full-frame camera: shallow but not extreme depth of
+  field, the room behind her genuinely soft, faint sensor grain across the frame, very
+  slight chromatic aberration at the window edge.
+- Her cream sweater has real knit texture, natural creases and a little pilling.
+
+The room behind her stays a real, specific, lived-in nursery — actual identifiable
+objects, not vague AI shapes.
+
+
+PRODUCT PLACEHOLDER — THIS OVERRIDES EVERY OTHER INSTRUCTION ABOUT THE PRODUCT.
+Do NOT draw the product tube, its label, its wordmark, its badge or its brush tip.
+Wherever the product should appear, paint a SOLID FLAT PURE MAGENTA shape instead
+(maximum red, zero green, maximum blue).
+
+SHAPE: upright, taller than wide, in the proportion 4 wide by 5 tall.
+
+SEATING: the magenta shape is held at chest height in BOTH of her hands, at the natural size of a 100 ml tube — about the length of her hand, no larger. Her fingers wrap around its sides and are drawn completely and realistically ON TOP of the magenta, so the grip is clearly visible.
+
+FLATNESS: the magenta is completely flat — no gradient, no shading, no highlight, no
+reflection in any glossy surface, no drop shadow and no contact shadow. Nearby
+surfaces keep their own natural color and reflect nothing. Its edges are hard.
+
+OCCLUSION — IMPORTANT: anything that would realistically pass IN FRONT of the product
+must still be drawn in front of it, over the magenta. Fingers gripping it wrap around
+its edges and are drawn fully, in natural skin tone, on top of the magenta shape.
+Draw those fingers completely and realistically; they are not magenta.
+
+This magenta shape must be the only magenta anywhere in the image. Nothing else in
+the frame may be magenta, pink, purple or violet.

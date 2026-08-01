@@ -1,0 +1,51 @@
+Recreate the attached reference ad (image 1) as a layout template: a headline across the top, rounded benefit chips stacked down the left, a portrait at the right, the product at the lower left, and a small oval trust badge at the bottom.
+
+ATMOSPHERE: clean, bright and premium — the calm confidence of a good catalog page. Soft warm peach background with a gentle vignette, even diffused light, no hard shadows anywhere. The portrait is warmly lit and relaxed, shot against the same soft ground so the subject and the chips feel like one composed page rather than a cut-out pasted on. The product sits at the lower left with a soft contact shadow. Everything is generously spaced and quietly ordered. Restrained, reassuring, adult.
+
+Realism protocol ON: a woman aged 31, a new mother, smooth youthful face with NO wrinkles, NO crow's feet and NO gray hair, natural healthy brown hair worn down, gentle closed-mouth smile, minimal makeup. Natural skin texture with visible pores, absolutely no beauty-filter smoothing.
+
+TYPE TREATMENT: the headline is a clean bold sans in near-black. The chips are white rounded pills with a soft shadow, each opening with a small filled brand-orange circle holding a white check.
+
+Bold headline at the top, exactly two lines: "LESS SHEDDING TO SWEEP UP" then "IN YOUR SHOWER."
+
+Small line directly beneath it, exactly: "Individual results vary."
+
+Five white rounded benefit chips stacked down the left, each with a brand-orange check circle at its left, reading exactly: "Works at the scalp", "Brush tip, no mess", "Two minutes after washing", "No powders or root spray", "Made for postpartum shedding"
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. The tube sits at the lower left beneath the chips.
+
+Small white oval badge at the bottom with a near-black outline and text exactly: "4.8★ RATED  ·  FREE SHIPPING  ·  EASY RETURNS"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: EXACTLY FIVE benefit chips, no more and no fewer. Each chip contains one short phrase only, appearing exactly ONCE, fully legible with no faded, ghosted, doubled or half-formed second line inside any chip. No sixth chip, no percentage, no price, no discount badge, no guarantee wording.
+
+PRODUCT SIZE AND PLACEMENT — the product was previously far too small and looked
+parked in the corner. It must now read as a proper hero element: LARGE, occupying a
+substantial part of the lower-left quadrant, big enough that its label is comfortably
+readable. It is anchored into the composition rather than floating — its base sits on
+an implied surface with a soft contact shadow beneath it, and it slightly overlaps the
+lower edge of the bottom benefit chip so it belongs to the layout instead of hovering
+in empty space. It is lit from the same soft direction as her face.
+
+Everything else in this ad stays exactly as described above — the headline, the small
+line beneath it, all five benefit chips, the oval badge, her portrait and the peach
+ground are all unchanged.
+
+
+PRODUCT — DO NOT DRAW IT. There is NO product, NO tube, NO bottle and NO container
+anywhere in this image, and nobody is holding anything. Do not draw a placeholder, a
+box, a blank shape or a stand-in of any kind.
+
+Leave the LOWER-LEFT QUADRANT of the frame completely clear and uncluttered — nothing
+but the smooth peach background there, no text, no chip, no hand, no object, no shadow.
+That space is reserved. Her hands and arms stay out of frame entirely; she is shown from
+the shoulders up only.
+
+Everything else stays exactly as described: the headline, the small line beneath it, all
+five benefit chips down the left, the oval trust badge at the bottom, her portrait at
+the right, and the peach ground.

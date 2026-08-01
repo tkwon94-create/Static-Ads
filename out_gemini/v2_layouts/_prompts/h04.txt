@@ -1,0 +1,54 @@
+Recreate the attached reference ad (image 1) as a layout template: three stacked horizontal panels telling a before / product / after story, each with a small rounded time-stamp chip in its top-left corner, and a solid claim bar across the very bottom.
+
+ATMOSPHERE: documentary, like three real photos pulled from the same phone. The light tells the story and carries the whole arc. Panel one is cold and dim — early-morning bathroom, blue-grey cast, overhead light not yet on, the flat unflattering light of 7am. Panel two is neutral and clean — the same bathroom counter, daylight, a plain product photograph with nothing staged around it. Panel three is warm and bright — the same bathroom with real daylight coming in, warmer skin tones, open and calm. No filters, no grading beyond what the room's own light would do.
+
+Realism protocol ON: natural skin, real hair with flyaways, real bathroom lighting, absolutely no beauty-filter smoothing. LOCK the same woman's identity across the top and bottom panels — same face, same age, same hair color and length, same bathroom, same camera angle and distance. She is aged 32.
+
+Top panel: she looks down at a hairbrush full of loose hair, worried, shoulders down. A small red rounded chip in the top-left corner reads exactly: "7:12 AM"
+
+Middle panel: a clean product shot on the bathroom counter. A small brand-orange rounded chip reads exactly: "THE SWITCH". The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark.
+
+Bottom panel: the SAME woman, same bathroom, now relaxed and smiling faintly, running her fingers through her hair. A small brand-orange chip reads exactly: "7:12 AM — FOUR WEEKS LATER"
+
+Solid brand-orange bar across the very bottom with white caps text, exactly: "TWO MINUTES AFTER EVERY WASH  ·  FREE SHIPPING  ·  EASY RETURNS"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly three panels and exactly three chips, one chip per panel. The bottom bar contains only the one line specified. No other text in any panel, no watermarks, no timestamps burned anywhere else, no logos.
+
+MIDDLE PANEL PRODUCT PLACEMENT — this panel is the hero beat and the product must look
+genuinely photographed on that counter, not added afterwards. The tube stands UPRIGHT
+DIRECTLY ON the bathroom counter surface, its base in contact with the stone, in the
+counter's perspective — the counter recedes to the right, so the tube sits in that same
+space rather than facing the camera flat-on. It is lit by the same soft window daylight
+as the faucet and the basin, brighter down one edge with gentle falloff on the other,
+and it has the same shallow depth of field as the rest of the panel.
+
+The counter is a matte surface. It shows NO colored reflection of the product and no
+colored patch of any kind beneath or around it.
+
+
+PRODUCT PLACEHOLDER — THIS OVERRIDES EVERY OTHER INSTRUCTION ABOUT THE PRODUCT.
+Do NOT draw the product tube, its label, its wordmark, its badge or its brush tip.
+Wherever the product should appear, paint a SOLID FLAT PURE MAGENTA shape instead
+(maximum red, zero green, maximum blue).
+
+SHAPE: upright, taller than wide, in the proportion 4 wide by 5 tall.
+
+SEATING: the magenta shape stands upright directly on the bathroom counter, its base in contact with the surface, in the counter's perspective. The counter is matte and shows no reflection of it whatsoever.
+
+FLATNESS: the magenta is completely flat — no gradient, no shading, no highlight, no
+reflection in any glossy surface, no drop shadow and no contact shadow. Nearby
+surfaces keep their own natural color and reflect nothing. Its edges are hard.
+
+OCCLUSION — IMPORTANT: anything that would realistically pass IN FRONT of the product
+must still be drawn in front of it, over the magenta. Fingers gripping it wrap around
+its edges and are drawn fully, in natural skin tone, on top of the magenta shape.
+Draw those fingers completely and realistically; they are not magenta.
+
+This magenta shape must be the only magenta anywhere in the image. Nothing else in
+the frame may be magenta, pink, purple or violet.
