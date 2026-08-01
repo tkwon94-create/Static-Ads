@@ -19,3 +19,7 @@ self_test_output.png
 
 # in-flight Gemini layouts (magenta placeholders, pre-composite)
 out_gemini/haloven_layouts/
+out_gemini/h11_direct/
+out_gemini/h05_direct/
+out_gemini/direct2/
+out_gemini/haloven_layouts_h11direct.png
