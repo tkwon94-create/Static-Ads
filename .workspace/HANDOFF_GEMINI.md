@@ -4,13 +4,20 @@ Read this first, then `.workspace/RUN_GEMINI.md` for the local runbook.
 
 ## Where the work stands
 
-**42 finished ads are already delivered and committed.** Nothing is lost or pending.
+**54 finished ads are delivered and committed.** Nothing is lost or pending.
 
-| Folder | Count | What |
-|---|---|---|
-| `.workspace/out/` | 20 | Original batch, 9 concept families, 1:1 |
-| `.workspace/out_postpartum/` | 10 | Postpartum-angle batch, 1:1 |
-| `.workspace/out_haloven/` | 12 | Competitor-structure batch, 1:1 + 3:4 |
+| Folder | Count | What | Engine |
+|---|---|---|---|
+| `.workspace/out/` | 20 | Original batch, 9 concept families, 1:1 | Higgsfield |
+| `.workspace/out_postpartum/` | 10 | Postpartum-angle batch, 1:1 | Higgsfield |
+| `.workspace/out_haloven/` | 12 | Competitor-structure batch, 1:1 + 3:4 | Higgsfield |
+| `out_gemini/haloven/` | 12 | **Competitor-structure batch rebuilt** | Nano Banana Pro |
+
+The Gemini rebuild of the competitor batch is done: 9 clean, 3 flagged. Read
+`.workspace/QC_GEMINI_HALOVEN.md` for the per-ad verdict. Layout text came back
+letter-perfect on all 12 — the defect class that forced hand-repair on every
+Higgsfield ad did not occur once. Every remaining defect is in the product label
+or in compositing, not the copy.
 
 Matching prompts live in `.workspace/laventra_prompts/`, `.workspace/postpartum_prompts/`,
 `.workspace/haloven_prompts/`. Review grids: `.workspace/*_review_grid.png`.
@@ -60,20 +67,21 @@ Why: Pro renders in-layout text far better. Every defect that needed hand-repair
 delivered batches — duplicated rows, dropped letters, ghost lines, garbled captions — is a
 text-rendering failure. Pro also takes local files as references and supports 4:5.
 
-**Blocker to check first:** the Claude Code sandbox's egress policy returns 403 CONNECT for
-`generativelanguage.googleapis.com`. If that is still blocked, Gemini cannot run in-session
-regardless of the key, and a new chat inherits the same policy. Verify before spending the
-user's time:
+**There is no egress blocker. Do not repeat this mistake.** An earlier handoff claimed
+the sandbox could not reach `generativelanguage.googleapis.com`. It can. The bare URL
+returns 403 because Google requires an API key — `"Method doesn't allow unregistered
+callers"` — not because the proxy refuses CONNECT. Test with the key in the header:
 
 ```bash
-curl -sS -o /dev/null -w "%{http_code}\n" --max-time 20 \
-  https://generativelanguage.googleapis.com/v1beta/models
+curl -sS -o /dev/null -w "%{http_code}\n" \
+  -H "x-goog-api-key: $GEMINI_API_KEY" \
+  https://generativelanguage.googleapis.com/v1beta/models      # 200
 ```
 
-`000` with a CONNECT 403 means still blocked → the user runs it locally per
-`.workspace/RUN_GEMINI.md`. A real HTTP status means it is reachable → run the self-test.
+Image models also need billing enabled on the key's project; on free tier they return
+429 with `limit: 0`, which never clears by waiting.
 
-**When reachable:**
+**To run:**
 
 ```bash
 export GEMINI_API_KEY='...'
@@ -85,8 +93,20 @@ Add `--refs-dir <folder>` with the user's own competitor screenshots named `h01.
 `h02.png`, … to do literal 1:1 recreations. That was impossible on Higgsfield, which only
 accepts public URLs — the delivered batch used the closest library analogues instead.
 
-Add `--placeholder` only if Pro garbles the tube label; then composite the real tube back in
-with `composite()` from `.workspace/gold_standard_ads.py`.
+Pro does garble the tube label, worse the smaller the tube sits in frame, so the
+placeholder-plus-composite path is the default rather than a fallback. Full mechanics,
+including when the strong-placeholder variant is needed and when it backfires, are in
+`.workspace/RUN_GEMINI.md`.
+
+## What's next
+
+1. **Rebuild the postpartum 10 on Gemini** — same command, `--batch postpartum`.
+2. **Rebuild the original 20 on Gemini** — `--batch original`.
+3. **A genuinely new batch** — 21 of the library's 50 references are still unused by any
+   batch (05, 07, 08, 16, 17, 18, 20, 21, 23, 24, 26, 27, 28, 29, 33, 34, 35, 37, 43,
+   45, 48), so a fresh set is possible without repeating a single structure. Note the
+   library's own rule: never serve ref-26 alongside ref-10, which the original batch used.
+4. **Resolve the three flagged competitor ads** (h06, h10, h11) — see the QC report.
 
 ## QC standard to hold
 

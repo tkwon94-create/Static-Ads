@@ -1,112 +1,126 @@
-# Running the ad batch on Gemini (Nano Banana Pro) — local machine
+# Running an ad batch on Gemini (Nano Banana Pro)
 
-The Claude Code sandbox cannot reach `generativelanguage.googleapis.com` (blocked by the
-org's egress policy, and environment settings are locked). Gemini therefore has to run on
-your own machine. Everything needed is already in this repo.
+**Gemini runs in-session. It is not blocked.** An earlier version of this file said the
+Claude Code sandbox could not reach `generativelanguage.googleapis.com` and that Gemini
+had to run on your own machine. That was wrong, and it cost a session's worth of time.
 
-**Why bother:** Nano Banana Pro renders in-layout text far better than the Higgsfield models
-(base `nano-banana` / `seedream`). Every defect that had to be hand-repaired in the delivered
-batch — duplicated rows, dropped letters, ghost lines, garbled captions — is a text-rendering
-failure that Pro largely avoids. It also accepts local files as references and supports 4:5.
-
-## One-time setup
+The confusion is a 403. This command:
 
 ```bash
-git clone <this repo>            # or: git pull
-cd Static-Ads
-git checkout claude/laventra-static-ads-higgsfield-sumwzb
-
-python3 --version                # 3.9+ ; the script is stdlib-only, no pip installs
-export GEMINI_API_KEY='...'      # from aistudio.google.com -> Get API Key
+curl -sS -o /dev/null -w "%{http_code}\n" --max-time 20 \
+  https://generativelanguage.googleapis.com/v1beta/models
 ```
 
-Verify access (generates one small image, ~$0.14):
+returns **403** — but that is *Google* rejecting an unauthenticated request
+(`"Method doesn't allow unregistered callers"`), not the proxy refusing CONNECT. The
+proxy handshake succeeds (`HTTP/1.1 200 Connection Established`). The same URL **with**
+the key returns 200.
+
+To actually test reachability, send the key:
 
 ```bash
-python3 .claude/skills/winning-statics/scripts/generate_static.py --self-test
+curl -sS -o /dev/null -w "%{http_code}\n" \
+  -H "x-goog-api-key: $GEMINI_API_KEY" \
+  https://generativelanguage.googleapis.com/v1beta/models      # expect 200
 ```
 
-## Generate one ad
+A bare-403 means "no credentials", not "blocked".
+
+## Setup
 
 ```bash
-python3 .claude/skills/winning-statics/scripts/generate_static.py \
-  --reference .claude/skills/winning-statics/references/ref-02-claim-stat-strip.png \
-  --product   .workspace/inputs/laventra_user_tube.png \
-  --prompt-file .workspace/haloven_prompts/h11_dark_hero.txt \
-  --aspect-ratio 4:5 \
-  --out out/h11_dark_hero.png
+export GEMINI_API_KEY='...'                       # aistudio.google.com -> Get API Key
+python3 .workspace/run_gemini_batch.py --self-test # ~$0.14, writes a test image
 ```
 
-To recreate a competitor ad **literally**, pass their screenshot as the reference instead:
+**Image models require billing.** On a free-tier key every image model returns HTTP 429
+with `limit: 0` — that means "not available on this tier at all", not "you ran out
+today". Waiting does nothing; enable billing on the key's Google Cloud project.
+
+## Generate a batch
 
 ```bash
-  --reference /path/to/haloven_dark_hero.png
+python3 .workspace/run_gemini_batch.py --batch haloven      # 12 ads, ~$1.70
+python3 .workspace/run_gemini_batch.py --batch postpartum   # 10 ads
+python3 .workspace/run_gemini_batch.py --batch original     # 20 ads
 ```
 
-That is the one thing Higgsfield could not do — it required public URLs, so the delivered
-batch used the closest library analogues instead.
+Useful flags: `--only h03,h11` · `--out DIR` · `--retries N` · `--placeholder`.
 
-## Generate all 12
+## The product tube: two paths
 
-`.workspace/haloven_ads.py` drives the Higgsfield path. For Gemini, loop the prompts —
-ad number, prompt file, reference, aspect ratio are listed in `ADS` inside that script:
+Pro renders in-layout text extremely well but still garbles the **product label**, and
+it garbles it worse the smaller the tube sits in frame. Two ways to handle it.
+
+**Path A — composite the real tube (preferred).** Generate with a magenta placeholder,
+then paste the real photo in, so the label is your exact pixels:
 
 ```bash
-mkdir -p out
-while IFS=, read -r num prompt ref ratio; do
-  python3 .claude/skills/winning-statics/scripts/generate_static.py \
-    --reference ".claude/skills/winning-statics/references/$ref" \
-    --product   .workspace/inputs/laventra_user_tube.png \
-    --prompt-file ".workspace/haloven_prompts/$prompt.txt" \
-    --aspect-ratio "$ratio" \
-    --out "out/${num}_${prompt}.png"
-done <<'EOF'
-h01,h01_quote_hero,ref-40-oversized-quote-lead.png,4:5
-h02,h02_whiteboard,ref-38-expert-whiteboard-checklist.png,4:5
-h03,h03_test_grid,ref-04-ranked-test-grid.png,1:1
-h04,h04_timestamp,ref-30-problem-fix-result.png,4:5
-h05,h05_comment_reply,ref-46-story-ama-frame.png,4:5
-h06,h06_pov_callouts,ref-25-lifestyle-first-person-overlay.png,4:5
-h07,h07_dont_try,ref-47-objection-kill-split.png,1:1
-h08,h08_marker,ref-32-hand-drawn-marker-annotation.png,1:1
-h09,h09_time_promise,ref-50-benefit-checklist-portrait.png,4:5
-h10,h10_selfie_checklist,ref-19-portrait-quote-attribution.png,1:1
-h11,h11_dark_hero,ref-02-claim-stat-strip.png,4:5
-h12,h12_poster,ref-06-authority-private-notes.png,4:5
-EOF
+python3 .workspace/run_gemini_batch.py --batch haloven --placeholder \
+        --out out_gemini/haloven_layouts
+python3 .workspace/composite_gemini.py --layouts out_gemini/haloven_layouts \
+        --out out_gemini/haloven
 ```
 
-Cost: ~$0.13–0.14 per image, so ~$1.70 for the 12, plus retries. Bills your Google key,
-not the Higgsfield credits.
+Pro sometimes ignores the placeholder when the prompt says the tube is *held in a hand*
+— it draws the product instead and the composite finds no magenta zone. For those ads
+use the stronger wording, which restates the rule in terms of the held object and pins
+the placeholder's aspect to 4:5 so less area needs reconstructing:
 
-## Two differences from the Higgsfield run
+```bash
+python3 .workspace/rerun_placeholder.py --only h03,h05,h06
+```
 
-1. **No magenta-placeholder compositing.** The Higgsfield path had the model paint a magenta
-   block where the product goes, then pasted your real tube in (`.workspace/gold_standard_ads.py`)
-   — necessary because base models garbled the label. Pro reproduces a supplied product photo
-   much more faithfully, so the prompts here ask for the product directly. **Check the label on
-   every output.** If Pro garbles it, reuse the composite pipeline: append the `PLACEHOLDER`
-   text from `gold_standard_ads.py` to each prompt, then run `composite()` from that module on
-   the result.
-2. **4:5 works.** Higgsfield's API rejects it and forced 3:4 on the delivered batch.
+**Path B — direct render.** Let Pro draw the tube. Fine when the tube is large in frame
+(h05, h12 came back essentially letter-perfect); unreliable when small. Always zoom to
+100% and read the microcopy — `SCALP CLERA`, `(V)BioExo-Water(Heartleaf)`, the body
+paragraph. That is where garbling shows first.
 
-## Where things are
+Do not use the strong placeholder wording on a full-bleed hero. On h11 it produced a
+cropped tube with the words `PIII badged` printed onto the label as leaked instruction
+text.
 
-| Path | What |
-|---|---|
-| `.workspace/inputs/laventra_user_tube.png` | product photo, label typo corrected |
-| `.workspace/haloven_prompts/` | the 12 competitor-structure prompts (locked hex palette) |
-| `.workspace/postpartum_prompts/` | the 10 postpartum-angle prompts |
-| `.workspace/laventra_prompts/` | the original 20 prompts |
-| `.workspace/out_haloven/` | 12 delivered competitor-structure ads |
-| `.workspace/out_postpartum/` | 10 delivered postpartum ads |
-| `.workspace/out/` | the original 20 ads |
-| `.workspace/gold_standard_ads.py` | magenta-placeholder + composite pipeline |
+### composite_gemini.py flags
 
-## Brand palette (already in every prompt)
+`--fullbox h10` clears the placeholder's entire bounding box instead of sweeping by hue.
+Needed only when the placeholder blended into a warm subject and left residue no color
+test can see (h10's crimson bled into a brown sweater and came back reddish-brown, blue
+*below* green). It costs real detail — it smeared h03's winner cell and ate part of
+h10's own bottom trust line — so keep it per-ad, never global.
 
-primary peach `#E8B093` · brand orange `#C14201` · badge orange `#B95618` ·
+`--pad 0.06` insets the tube inside the placeholder box.
+
+## Prompts
+
+`.workspace/build_haloven_prompts.py` generates the 12 competitor-structure prompts and
+self-checks that no `#` survives in any layout body. Two rules it enforces, both learned
+the hard way:
+
+- **Never write a hex code in the layout body.** The old prompts said "a thick `#C14201`
+  border" while the footer forbade rendering hex codes — that is how codes leaked into
+  an earlier run as visible text. Name colors in words; the codes appear only in the
+  final painting-instruction block.
+- **Never leave placeholder wording in a non-placeholder prompt.** h02 carried a stale
+  magenta line that contradicted its own instruction to render the tube.
+
+Higgsfield-era originals are preserved in `.workspace/haloven_prompts_higgsfield/`.
+
+## QC standard
+
+Inspect every image before showing the user: label fidelity against the real photo, every
+quoted line letter-perfect and appearing exactly once, no duplicated or ghost text, no
+leaked hex codes, no reference-ad contamination, realistic skin, correct subject age
+(specify age as a number — "aged 30" works, descriptions do not). Regenerate up to twice,
+then repair deterministically, then flag honestly rather than shipping something broken.
+
+`python3 .workspace/make_grid.py --dir out_gemini/haloven --out grid.png` builds a
+labeled contact sheet for a first pass, but it is not a substitute for viewing each ad
+at full size — the h02 X-mark regression and h10's smear were both invisible at
+thumbnail scale.
+
+## Brand palette
+
+peach `#E8B093` · brand orange `#C14201` · badge orange `#B95618` ·
 text `#000000` · product white `#F5F5F6` · background `#FFFFFF`
 
-Pass colors as instructions, never as content — an earlier run printed the hex codes as
-visible text in the ads. The prompts already carry the guardrail wording.
+Pass colors as painting instructions, never as content.
