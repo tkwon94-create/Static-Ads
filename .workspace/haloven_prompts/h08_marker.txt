@@ -1,8 +1,23 @@
-Recreate the attached reference ad (image 1) as a layout template: the product photographed dead-center on a flat, saturated, high-contrast solid-color background, with casual hand-drawn marker annotations, circles and arrows drawn around it. Scrappy, un-designed, hand-made feel.
-Background: a flat solid #E8B093 peach filling the entire frame.
-Hand-written marker headline across the top in black, exactly: "THE LAST HAIR PRODUCT YOU'LL BUY"
-The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." The tube centered, photographed straight on.
-A hand-drawn black marker circle drawn around the brush tip at the bottom of the tube, with a hand-drawn arrow pointing to it and hand-written text beside it exactly: "brush tip, not greasy fingers"
+Recreate the attached reference ad (image 1) as a layout template: the product photographed dead-center on a flat saturated background, with casual hand-drawn marker annotations, arrows and a circle scrawled around it.
+
+ATMOSPHERE: deliberately scrappy and un-designed — it should look like someone printed a product photo and attacked it with markers. The background is a completely flat, saturated peach field edge to edge, no gradient and no texture. The product is photographed straight on, evenly lit, catalog-plain, so the scrawl on top is the only energy in the frame. The annotations are genuinely hand-made: uneven baselines, wobbling arrow shafts, a circle that does not quite close, varying pressure in the stroke, the occasional overshoot. Nothing is aligned to a grid. Loud, immediate, obviously human.
+
+TYPE TREATMENT: every word in this ad is hand-written marker lettering, never a typeface. The headline is thick black marker caps across the top; the bottom line is written in brand orange with a hand-drawn underline scratched beneath it.
+
+Hand-written marker headline across the top in black caps, exactly: "THE LAST HAIR PRODUCT YOU'LL BUY"
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. The tube centered, photographed straight on.
+
+A hand-drawn black marker circle around the brush tip at the bottom of the tube, with a hand-drawn arrow pointing to it and hand-written text beside it exactly: "brush tip, not greasy fingers"
+
 A second hand-drawn arrow pointing at the middle of the tube with hand-written text exactly: "works while your hair dries"
-At the bottom, hand-written in #C14201 with a hand-drawn underline beneath it, exactly: "cheaper than your dry shampoo habit"
-COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+
+At the bottom, hand-written in brand orange with a hand-drawn underline beneath it, exactly: "cheaper than your dry shampoo habit"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly one headline, two annotations with one arrow each, and one underlined bottom line. Each appears exactly ONCE. No price, no percentage, no discount badge, no starburst, no additional scribbles or stray words.

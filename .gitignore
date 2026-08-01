@@ -16,3 +16,6 @@ self_test_output.png
 .workspace/out_hv/
 .workspace/out_hv2/
 .workspace/out_hv3/
+
+# in-flight Gemini layouts (magenta placeholders, pre-composite)
+out_gemini/haloven_layouts/

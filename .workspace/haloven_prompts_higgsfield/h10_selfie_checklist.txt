@@ -1,0 +1,15 @@
+Recreate the attached reference ad (image 1) as a layout template: a real selfie of a woman holding the product beside her face, with a dark rounded caption chip at the top and six dark rounded checklist chips stacked down the lower half. Native UGC selfie feel. Realism protocol ON: natural skin with visible pores and texture, real indoor window light, absolutely no beauty-filter smoothing.
+Person: a YOUNG woman aged 30 — early thirties, a new mother, smooth youthful face with NO wrinkles, NO crow's feet and NO gray hair, long healthy brown hair — smiling gently at the camera in a cozy living room with soft daylight from a window. She holds the product up beside her face.
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz."
+Dark rounded caption chip across the top with white text, exactly: "I started this after my 3-month shed and now I..."
+Six dark rounded chips stacked down the lower half, each beginning with a green check mark, white text, reading exactly:
+"Don't dread the shower drain"
+"Stopped hiding my part with powder"
+"Skip the dry shampoo most days"
+"Wear my hair down again"
+"Feel my baby hairs growing back"
+"Actually look forward to wash day"
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+
+
+STRICT: EXACTLY six checklist chips, each containing only its one specified line, each appearing exactly ONCE, all fully legible with no faded, ghosted, doubled or half-formed second line inside any chip. No extra chip, tag or badge above the caption chip. The woman must look about 30 years old.

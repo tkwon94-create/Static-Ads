@@ -1,8 +1,23 @@
-Recreate the attached reference ad (image 1) as a layout template: a bold two-line thesis headline in white caps across the top, the product centered on a deep dark background, a row of four small icon-and-label trust columns beneath it, and a thin provenance bar at the very bottom. Premium, high contrast, authoritative.
-Background: a deep rich charcoal, almost black, filling the frame.
-Enormous bold white headline across the top, exactly two lines: "YOUR HAIR ISN'T THE" then "PROBLEM. YOUR SCALP IS."
-Small white line beneath it, exactly: "That's where we put it."
-The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Product centered, dramatically lit against the dark background.
-A row of four small white line icons across the lower area, each with a short label beneath, reading exactly: "Heartleaf exosomes", "Works at the root", "Brush applicator", "4.8★ rated"
-Thin white text bar at the very bottom, exactly: "Heartleaf exosome formula  ·  Brush applicator  ·  Loved by new moms"
-COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+Recreate the attached reference ad (image 1) as a layout template: a bold two-line thesis headline across the top, a small line beneath it, the product centered in the middle of the frame, and a row of stat columns divided by thin vertical rules across the lower area.
+
+ATMOSPHERE: premium, restrained and engineered — the calm authority of a well-made product page. Follow the reference's composition and restraint exactly, but invert its tone: where the reference sits on warm off-white, this sits on a deep rich charcoal, almost black, filling the frame. A single soft pool of light falls on the centered product, which is lit dramatically with a bright specular rim down one edge and a soft gradient falloff into darkness at the corners. Everything is symmetrical and generously spaced. No texture, no props, no background detail whatsoever — the product alone in the dark, and type. Confident and quiet, not loud.
+
+TYPE TREATMENT: the headline is a heavy condensed sans in white caps, tightly set, centered across the top. The stat columns beneath use a small white line icon above a short bold label, separated by thin vertical hairlines, exactly as the reference arranges its bottom strip.
+
+Enormous white headline across the top, exactly two lines: "YOUR HAIR ISN'T THE" then "PROBLEM. YOUR SCALP IS."
+
+Small white line directly beneath it, exactly: "That's where we put it."
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. Product centered, dramatically lit against the dark background.
+
+A row of three stat columns across the lower area, separated by thin vertical hairlines, each with a small white line icon above a short white label. The three labels read exactly: "WORKS AT THE ROOT", "BRUSH APPLICATOR", "TWO MINUTES A DAY"
+
+Thin white line of small text at the very bottom, exactly: "4.8★ rated  ·  Free shipping  ·  Easy returns"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly three stat columns, no more. Each label appears exactly ONCE. No percentages, no invented statistics, no ingredient claims, no laboratory or testing claims, no logo other than the product's own label, no button, no price.

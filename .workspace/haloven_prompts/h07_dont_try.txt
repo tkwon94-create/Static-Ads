@@ -1,7 +1,24 @@
-Recreate the attached reference ad (image 1) as a layout template: a bold reverse-psychology headline stacked on the left over a real photograph, with the product standing at the right. Realism ON for the person: natural skin, real hair, no smoothing.
-Background photograph: a woman in her early thirties in a softly lit bedroom, sitting on the edge of the bed, looking down at a hairbrush in her hand with a resigned expression. She is at the left of frame.
-Enormous bold white headline stacked at the upper left, exactly two lines: "DON'T TRY" then "Laventra Grow:Turn"
-Beneath it in smaller white text, exactly: "...unless you're ready to stop hiding postpartum shedding with dry shampoo, powders, and buns."
-The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." The tube stands large at the right side of frame, well lit.
-Small white rounded chip at the bottom left with dark text, exactly: "2 Minutes After Every Wash"
-COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+Recreate the attached reference ad (image 1) as a layout template: an enormous reverse-psychology headline stacked at the upper left, benefit rows beneath it, the product standing large at the right, and a solid bar across the bottom.
+
+ATMOSPHERE: loud, flat and commercial — a deliberate pattern interrupt. The background is a flat solid peach field with no gradient, no texture and no photographic depth, so the type and the product read instantly at thumbnail size. The product is lit like a retail product shot: bright, crisp, hard-edged, with a tight contact shadow directly beneath it and a clean specular highlight down one side. Maximum contrast, maximum legibility, zero softness. This ad is designed to stop a scroll, not to be beautiful.
+
+TYPE TREATMENT: the headline is a heavy condensed sans in near-black, set very large and tight, filling the upper-left corner edge to edge. The second line is set in brand orange while the first stays near-black.
+
+Enormous headline stacked at the upper left, exactly two lines: "DON'T TRY THIS" then "IF YOU LIKE DRY SHAMPOO"
+Set the first line near-black and the second line brand orange.
+
+Beneath it in smaller near-black text, exactly: "It works at the scalp, so you stop covering the problem up."
+
+Three benefit rows down the left beneath that text, each with a simple brand-orange line icon at its left, reading exactly: "Brush tip reaches the root", "Two minutes after every wash", "No powder, no root spray"
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. The tube stands large at the right side of frame, lit as described above.
+
+Solid brand-orange bar across the very bottom with white caps text, exactly: "FREE SHIPPING  ·  EASY RETURNS  ·  4.8★ RATED"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly two headline lines, one sub-line, three benefit rows and one bottom bar. Each line appears exactly ONCE. No discount badge, no percentage, no price, no starburst, no fourth benefit row.

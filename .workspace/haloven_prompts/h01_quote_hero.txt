@@ -1,6 +1,20 @@
-Recreate the attached reference ad (image 1) as a layout template: an oversized customer quote fills the top half in a warm off-white serif, with the product standing below it against a deep saturated background. Premium, editorial, high contrast.
-Background: a deep rich charcoal-brown, almost black.
-Giant serif quote across the top, in off-white, exactly: "In 3 weeks I stopped checking the drain."
+Recreate the attached reference ad (image 1) as a layout template: an oversized customer quote fills the top half, with the product standing below it, dramatically lit against a deep saturated background.
+
+ATMOSPHERE: cinematic and premium, high contrast, the mood of a late-evening photograph. The frame is almost black at the edges and warms toward the center, where a soft terracotta glow rises from below and behind the product like low firelight — warm peach light, never literal flames. Faint atmospheric haze softens the background. The product catches a bright specular rim highlight down one edge and sits on a barely-visible reflective surface. Deep shadow everywhere else. Nothing decorative, nothing cluttered — the drama comes entirely from light.
+
+TYPE TREATMENT: the quote is enormous, set in a warm off-white serif, tightly leaded so the lines nearly touch, centered across the top. The middle line is set in the peach/terracotta accent color while the other two lines stay off-white — this single color shift is the only emphasis in the layout.
+
+Giant serif quote across the top, on exactly three lines, reading exactly: "In 3 weeks I stopped" then "checking the drain" then "every morning."
+Set the middle line, "checking the drain", in peach/terracotta; the other two lines off-white.
+
 Small attribution line beneath the quote in letter-spaced caps, exactly: "VERIFIED CUSTOMER  ★★★★★  4.8 RATED"
-The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Product standing centered in the lower half, well lit against the dark background.
-COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. Product standing centered in the lower half, lit as described above.
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: the image contains ONLY the three quote lines, the one attribution line, and the product. No headline, no logo, no button, no price, no extra badge, no caption.

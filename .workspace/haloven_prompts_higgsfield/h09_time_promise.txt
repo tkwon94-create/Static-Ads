@@ -1,0 +1,16 @@
+Recreate the attached reference ad (image 1) as a layout template: a huge time-promise headline at the top, a hand holding the product at the left, five small icon-and-text benefit rows stacked down the right, and a solid offer bar across the bottom. Clean, bright, catalog-like.
+Background: soft #E8B093 peach.
+Enormous bold headline at the top in near-black, exactly two lines: "LESS SHEDDING" then "IN 4 WEEKS."
+Small line beneath it, exactly: "Based on clinical testing. Individual results may vary."
+A woman's hand holds the product at the left of frame. The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz."
+Five small benefit rows down the right, each with a simple line icon and two lines of text, reading exactly:
+"Postpartum Shedding" with "Supports hair through the 3-month shed"
+"A Wider Part" with "Supports density where you see it most"
+"Flaky Scalp" with "Supports a calmer, cleaner scalp"
+"Dry Scalp" with "Supports scalp hydration"
+"Two Minutes A Day" with "Brush it in after every wash"
+Solid #C14201 bar across the bottom with white text, exactly: "Free Shipping On All Orders  ·  Easy Returns"
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+
+
+STRICT: EXACTLY FIVE benefit rows, no more. Each row is one bold title line plus one grey subtitle line, and each of the five appears exactly ONCE. Never repeat a row, never add a sixth, seventh or eighth row, never render blurred or half-formed duplicate text. The bottom bar contains only the one sentence specified, cleanly legible.

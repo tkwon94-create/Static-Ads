@@ -1,8 +1,23 @@
-Recreate the attached reference ad (image 1) as a layout template: a printed poster pinned to a wall with a black binder clip at the top, on textured off-white paper, with the product centered and five hand-drawn arrows curving out to short hand-written labels around it, and a solid footer bar. Editorial, informational, not advertising.
-Paper background: soft textured off-white.
-Serif headline across the top with a hand-drawn underline beneath it, exactly: "Still finding hair all over the shower?"
+Recreate the attached reference ad (image 1) as a layout template: a printed sheet held by a black binder clip at the top, on textured paper, with a serif headline, the product centered, hand-drawn annotations curving out to short labels, and a solid footer bar.
+
+ATMOSPHERE: archival and scholarly — the reference's central quality, and the reason it does not read as advertising. Warm off-white paper with real fiber texture, a faint aged tone toward the edges, and the soft shadow of a sheet that is physically pinned to a wall. Every drawn element looks like fine ink on paper: thin confident pen strokes, hand-ruled underlines, slightly irregular hand-lettering. The lighting is flat and even, as if the page were photographed straight on in daylight. Nothing glossy, nothing digital, no drop shadows on the type. It should feel like a page from a well-kept notebook rather than a poster from a brand.
+
+TYPE TREATMENT: the headline is a classic serif with a hand-ruled ink underline beneath it. The five labels are hand-lettered in ink, small and neat.
+
+Serif headline across the top with a hand-drawn ink underline beneath it, exactly: "Still finding hair all over the shower?"
+
 Small line beneath the headline, exactly: "Scalp support that goes beyond dry shampoo, powders, and buns."
-The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Product centered on the poster.
-Five hand-drawn curving arrows pointing outward from the product to five short hand-written labels placed around it, reading exactly: "Supports the scalp, not the strands", "Heartleaf exosomes + caffeine", "Brush tip reaches the root", "Two minutes after washing", "Loved by moms growing it back"
-Solid #C14201 footer bar across the bottom with white caps text, exactly: "MAKE IT PART OF YOUR SHOWER"
-COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like #E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF). US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines. Never copy words or products from the reference image; it advertises a DIFFERENT product and is only a guide for layout geometry and mood.
+
+The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. Product centered on the sheet.
+
+Five hand-drawn curving ink arrows pointing outward from the product to five short hand-lettered labels placed around it, reading exactly: "Supports the scalp, not the strands", "Brush tip reaches the root", "Two minutes after washing", "No powders or root spray", "Loved by moms growing it back"
+
+Solid brand-orange footer bar across the bottom with white caps text, exactly: "MAKE IT PART OF YOUR SHOWER"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly five arrows and five labels. Each label appears exactly ONCE. No page numbers, no dates, no signature, no handwriting other than the five labels, no ingredient or laboratory claims, no extra annotations in the margins.
