@@ -21,6 +21,31 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, ".workspace"))
 from run_gemini_batch import HALOVEN, REFDIR, GEN, PRODUCT  # noqa: E402
+
+# Appending an override is not always enough. h01's ATMOSPHERE block spends four
+# sentences describing near-black edges and firelight, and the model followed that
+# rather than the override tacked on afterwards (peach coverage moved 4.7% -> 5.9%).
+# For those ads the dark language has to be removed from the body first.
+NEUTRALIZE = {
+    "h01_quote_hero": [
+        ("The frame is almost black at the edges and warms toward the center, where a soft "
+         "terracotta glow rises from below and behind the product like low firelight — warm "
+         "peach light, never literal flames. Faint atmospheric haze softens the background. "
+         "The product catches a bright specular rim highlight down one edge and sits on a "
+         "barely-visible reflective surface. Deep shadow everywhere else.",
+         "The frame is a warm peach field throughout, brighter behind the product where a "
+         "soft glow blooms, and deepening gently toward the corners. Faint atmospheric haze "
+         "softens it further. The product catches a clean specular highlight down one edge "
+         "and sits on a barely-visible reflective surface."),
+        ("with the product standing below it, dramatically lit against a deep saturated "
+         "background.",
+         "with the product standing below it, dramatically lit against a warm peach "
+         "background."),
+        ("the quote is enormous, set in a warm off-white serif",
+         "the quote is enormous, set in a deep near-black serif"),
+        ("the other two lines off-white.", "the other two lines near-black."),
+    ],
+}
 from rerun_placeholder import STRONG  # noqa: E402
 
 PROMPT_DIR = os.path.join(ROOT, ".workspace/haloven_prompts")
@@ -118,7 +143,12 @@ def main():
             continue
 
         with open(os.path.join(PROMPT_DIR, f"{pf}.txt")) as f:
-            text = f.read().rstrip() + GROUND[pf]
+            text = f.read().rstrip()
+        for old, new in NEUTRALIZE.get(pf, []):
+            if old not in text:
+                print(f"  warning: {pf} neutralize target not found: {old[:48]}...")
+            text = text.replace(old, new)
+        text += GROUND[pf]
         if not a.no_placeholder:
             text += STRONG
         ppath = os.path.join(tmp, f"{num}.txt")

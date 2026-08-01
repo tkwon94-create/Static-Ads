@@ -59,6 +59,13 @@ def sweep_box(img, mask, box, margin=26, full=False):
     for y in range(max(0, y0 - margin), min(H, y1 + margin)):
         for x in range(max(0, x0 - margin), min(W, x1 + margin)):
             cr, cg, cb = px[x, y]
+            # Never sweep near-black pixels. The band below the box exists to
+            # catch reflections, but on h11 it reached into the stat row and the
+            # inpaint smeared "BRUSH APPLICATOR" into mush — the raw layout had
+            # rendered it perfectly. Type is dark and unsaturated; the
+            # placeholder never is, so this costs nothing and protects all copy.
+            if max(cr, cg, cb) < 110:
+                continue
             if (cr - cg) >= 12 and (cb - cg) >= 8:
                 mp[x, y] = 255
     return mask.filter(ImageFilter.MaxFilter(9 if not full else 5))
