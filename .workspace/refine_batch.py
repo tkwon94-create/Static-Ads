@@ -76,30 +76,76 @@ separate, individual X marks.
     # ── h03: eight comparison items were blank white placeholder labels ──────────
     "h03_test_grid": ("""
 
-THE EIGHT COMPARISON PRODUCTS — CRITICAL, THIS REPLACES THE LABEL DESCRIPTION ABOVE.
-Do NOT draw plain white bottles with blank white rectangles stuck on them. That reads
-as an unfinished mockup. Each of the eight is a REAL-LOOKING RETAIL PRODUCT that a
-person actually bought: correct form factor, correct materials, correct finish, and a
-properly printed label that wraps the container and follows its curve.
+THIS IS A GRID OF NINE REAL PHOTOGRAPHS. Compare against how a real product-test ad
+looks: a hand holding one object against a plain wall, shot nine times.
 
-Give each one the packaging its category really has:
-- Dry Shampoo: a tall aerosol can, matte finish, plastic cap, spray nozzle
-- Biotin Gummies: a wide amber or white plastic jar, screw lid, gummies visible inside
-- Volume Powder: a small shaker bottle with a perforated sifter top
-- Scalp Massager: a handheld silicone-bristle scalp brush, no bottle at all
-- Rosemary Oil: a small amber glass dropper bottle with a black dropper cap
-- Hair Vitamins: a supplement bottle with a printed wrap label and a white lid
-- Thickening Spray: a slim pump-spray bottle with a fine-mist trigger
-- Silk Pillowcase: a folded satin pillowcase, soft sheen, visible fabric fold
+NO PERSON, NO FACE — AND THIS CONTRADICTS THE REFERENCE IMAGE ON PURPOSE. The reference
+(image 1) shows a woman's face behind the product in every cell. DO NOT REPRODUCE THAT.
+Ignore the face in the reference completely; take only its grid geometry and badge
+placement.
 
-Each product's printed label carries ONLY its category name from the list above, set
-in ordinary small product typography as part of the printed label — never as a floating
-white box, never as a caption laid over the photo. Invent NO brand names, NO logos, NO
-slogans and NO other words. The packaging designs are plain and generic: simple type,
-one or two muted colors, nothing resembling any real-world brand.
-""", "the magenta shape is held in the hand in the bottom-right cell, at the same "
-     "scale and angle as the products in the other eight cells, with the fingers "
-     "wrapping it naturally and drawn on top of it."),
+Each cell shows ONLY a hand and forearm holding the product against a plain, softly-lit
+neutral wall. There is NO face, NO head, NO hair, NO shoulder, NO neck and NO body in
+any cell — nothing but a hand, a forearm, the product and the wall behind them. If a
+face appears anywhere in this image the result is a total failure.
+
+THE EIGHT COMPARISON PRODUCTS — these must look like eight things a real person actually
+bought, which means they DO NOT match each other. Vary the material, the form and above
+all the COLOR. Do not render them all in the same cream or beige plastic; that is the
+main thing being corrected. Each is a distinctly different object:
+
+- Dry Shampoo: a tall matte AEROSOL CAN, pale blue, metal, with a white plastic cap
+- Biotin Gummies: a wide AMBER PLASTIC JAR, white screw lid, orange gummies visible inside
+- Volume Powder: a small WHITE SHAKER BOTTLE with a perforated sifter top, dark grey cap
+- Scalp Massager: a molded SILICONE SCALP BRUSH, bright teal, soft rubber nubs, no bottle
+- Rosemary Oil: a small DARK GREEN GLASS DROPPER BOTTLE, black rubber dropper bulb
+- Hair Vitamins: a white opaque SUPPLEMENT BOTTLE, sage green wrap label, white lid
+- Thickening Spray: a slim CLEAR PLASTIC PUMP SPRAY, liquid visible inside, black trigger
+- Silk Pillowcase: a folded CHARCOAL GREY SATIN pillowcase with a visible sheen and fold
+
+Materials must read specifically: metal reflects, glass has depth and a highlight,
+clear plastic shows the liquid inside with a meniscus, silicone is matte and soft,
+satin has a directional sheen.
+
+LABEL TEXT — EACH CATEGORY NAME APPEARS EXACTLY ONCE IN THE ENTIRE IMAGE. It is
+PRINTED ONTO its own product's label, in small dark product typography, wrapping the
+container and following its curve.
+
+Do NOT also write it as a caption. There are NO caption strips, NO text rows, NO labels
+above, below, beside or between the cells, and no repeated words anywhere. The previous
+attempt printed "Thickening Spray" and "Silk Pillowcase" twice each — once on the
+product and again as a caption — which is a duplication failure.
+
+The ONLY text in this image is: the headline at the very top, one category name printed
+on each of the eight products, the nine score badges, and the one short caption beneath
+the ninth cell. Nothing else.
+
+For the Scalp Massager and the Silk Pillowcase, which have no bottle to print on, place
+the name on a small printed hang-tag or care-label attached to the object itself — still
+part of the object, never a caption. No label may be blank.
+
+Each label carries ONLY its category name from the list above. Invent NO brand names,
+NO logos, NO slogans, NO other words.
+
+Let each cell's wall vary very slightly in tone and shadow, as separate photographs
+taken on different days would.
+
+SCORE BADGES — every cell carries a small round WHITE badge with a thin dark outline in
+its lower-right corner, containing a score in ordinary dark type. The eight scores read
+exactly, one per cell in this order: "3/10", "4/10", "3/10", "5/10", "5/10", "4/10",
+"3/10", "4/10". The ninth cell's badge reads exactly "9.4/10".
+
+There are NO cross marks, NO X marks and NO check marks anywhere. The badges contain
+only the score text.
+
+THE NINTH CELL is the winner: outlined with a thick brand-orange border and washed with
+a soft peach tint. It contains NO product, NO hand, NO forearm and NO object of any
+kind — it is the plain tinted wall alone, completely empty, with its score badge in the
+lower-right corner and the short caption beneath the grid. That empty space is reserved.
+
+Do not sketch, outline or suggest a hand there. The previous attempt drew a cartoon
+outline of a hand in this cell; the cell must be genuinely empty.
+""", ""),
 
     # ── h04: middle-panel product didn't match the room; pink slab on the counter ─
     "h04_timestamp": ("""
@@ -200,6 +246,18 @@ objects, not vague AI shapes.
 # rescue. For these, no product is drawn at all: the scene is generated with clear space
 # and the real tube is composited into it, so there is nothing to remove and no residue.
 NO_PRODUCT = {
+    "h03_test_grid": """
+
+PRODUCT — DO NOT DRAW IT, AND DO NOT DRAW ANY PLACEHOLDER. There is no magenta shape
+anywhere in this image. Nothing in any cell is magenta, pink, purple or violet.
+
+The ninth cell (bottom-right) is EMPTY: the plain peach-tinted wall alone, inside its
+brand-orange border, with its score badge in the lower-right corner. No product, no
+hand, no forearm, no outline and no object of any kind in that cell. That space is
+reserved and must stay clear.
+
+The other eight cells each contain their hand and their product exactly as described.
+""",
     "h04_timestamp": """
 
 PRODUCT — DO NOT DRAW IT. There is NO product, NO tube, NO bottle and NO container

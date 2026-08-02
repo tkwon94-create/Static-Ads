@@ -1,0 +1,100 @@
+Recreate the attached reference ad (image 1) as a layout template: a clean 3x3 grid of nine photo cells, each cell a hand holding one product toward the camera, with a small badge pinned in the corner of every cell.
+
+ATMOSPHERE: dispassionate editorial product-test photography, like a magazine round-up. Soft, even, shadowless light across all nine cells; a plain warm-neutral wall behind every hand; identical camera distance, identical hand position, identical product scale in each cell so the grid reads as one controlled test rather than nine stock photos. In each cell the same woman's face is visible but softly out of focus behind the product she is holding — present, not the subject. Thin white gutters separate the cells. Calm, clinical, evidence-like. No lifestyle styling, no props, no color grading tricks.
+
+Bold black headline across the very top, exactly: "WE TRIED 9 POSTPARTUM HAIR FIXES FOR 30 DAYS"
+
+Eight cells hold GENERIC unbranded products with plain white labels — no brand names, no logos, no readable text beyond the one label word given here. Their plain labels read exactly, one per cell: "Dry Shampoo", "Biotin Gummies", "Volume Powder", "Scalp Massager", "Rosemary Oil", "Hair Vitamins", "Thickening Spray", "Silk Pillowcase". Each of these eight cells carries a small round white badge in its lower-left corner with a hand-drawn grey X inside.
+
+The ninth cell, bottom-right, is outlined with a thick brand-orange border and washed with a soft peach tint so it reads as the winner at a glance. It holds the product. The product is the LAVENTRA GROW:TURN AMPOULE: a white squeeze tube with a built-in white comb/brush applicator tip at the bottom. Its label has an orange serif "LAVENTRA" wordmark, black "GROW:TURN AMPOULE", an orange pill badge, and "100 ml / 3.38 fl. oz." Reproduce the supplied product photo faithfully — same proportions, same label layout, same wording. Do not redesign the label, do not invent extra label text, do not change the wordmark. Its badge is a filled brand-orange circle in the lower-left corner with a white check mark inside.
+
+Directly beneath the ninth cell, a short label exactly: "The only one that treats the scalp"
+
+COLOR PALETTE — CRITICAL: the codes below tell you WHICH COLORS TO PAINT WITH. They are instructions to you, not content. NEVER draw, print, write, letter, or display any hex code, any '#' symbol, or any color name anywhere in the image — an image containing a code like E8B093 as visible text is a total failure. Paint with these colors: primary peach/terracotta (hex E8B093), brand orange (hex C14201), badge orange (hex B95618), text near-black (hex 000000), product white (hex F5F5F6), background white (hex FFFFFF).
+
+US English spelling. Every quoted string must be spelled EXACTLY as written, letter for letter, and appear exactly ONCE. Render no other text anywhere — no extra wordmarks, no page numbers, no URLs, no hex codes, no ghost or duplicated lines, no half-formed or blurred second copy of any line. Type must be cleanly kerned and fully legible at every size.
+
+The reference image (image 1) is a screenshot from an ad library: it may include browser chrome, a social feed header, an advertiser name, a caption, a link preview and a call-to-action button. Reproduce NONE of that furniture — recreate only the ad creative itself, filling the whole frame. The reference advertises a DIFFERENT product in a different category; take from it only layout geometry, lighting, mood and type treatment. Never copy its words, its brand names, its logos, its badges or its product.
+
+STRICT CONTENT RULES: exactly nine cells, three across and three down. Each of the eight generic labels appears exactly ONCE and only inside its own cell. No brand names, no logos, no score numbers, no extra captions, no text of any kind inside the cells beyond the eight plain labels named above.
+
+THIS IS A GRID OF NINE REAL PHOTOGRAPHS. Compare against how a real product-test ad
+looks: a hand holding one object against a plain wall, shot nine times.
+
+NO PERSON, NO FACE — AND THIS CONTRADICTS THE REFERENCE IMAGE ON PURPOSE. The reference
+(image 1) shows a woman's face behind the product in every cell. DO NOT REPRODUCE THAT.
+Ignore the face in the reference completely; take only its grid geometry and badge
+placement.
+
+Each cell shows ONLY a hand and forearm holding the product against a plain, softly-lit
+neutral wall. There is NO face, NO head, NO hair, NO shoulder, NO neck and NO body in
+any cell — nothing but a hand, a forearm, the product and the wall behind them. If a
+face appears anywhere in this image the result is a total failure.
+
+THE EIGHT COMPARISON PRODUCTS — these must look like eight things a real person actually
+bought, which means they DO NOT match each other. Vary the material, the form and above
+all the COLOR. Do not render them all in the same cream or beige plastic; that is the
+main thing being corrected. Each is a distinctly different object:
+
+- Dry Shampoo: a tall matte AEROSOL CAN, pale blue, metal, with a white plastic cap
+- Biotin Gummies: a wide AMBER PLASTIC JAR, white screw lid, orange gummies visible inside
+- Volume Powder: a small WHITE SHAKER BOTTLE with a perforated sifter top, dark grey cap
+- Scalp Massager: a molded SILICONE SCALP BRUSH, bright teal, soft rubber nubs, no bottle
+- Rosemary Oil: a small DARK GREEN GLASS DROPPER BOTTLE, black rubber dropper bulb
+- Hair Vitamins: a white opaque SUPPLEMENT BOTTLE, sage green wrap label, white lid
+- Thickening Spray: a slim CLEAR PLASTIC PUMP SPRAY, liquid visible inside, black trigger
+- Silk Pillowcase: a folded CHARCOAL GREY SATIN pillowcase with a visible sheen and fold
+
+Materials must read specifically: metal reflects, glass has depth and a highlight,
+clear plastic shows the liquid inside with a meniscus, silicone is matte and soft,
+satin has a directional sheen.
+
+LABEL TEXT — EACH CATEGORY NAME APPEARS EXACTLY ONCE IN THE ENTIRE IMAGE. It is
+PRINTED ONTO its own product's label, in small dark product typography, wrapping the
+container and following its curve.
+
+Do NOT also write it as a caption. There are NO caption strips, NO text rows, NO labels
+above, below, beside or between the cells, and no repeated words anywhere. The previous
+attempt printed "Thickening Spray" and "Silk Pillowcase" twice each — once on the
+product and again as a caption — which is a duplication failure.
+
+The ONLY text in this image is: the headline at the very top, one category name printed
+on each of the eight products, the nine score badges, and the one short caption beneath
+the ninth cell. Nothing else.
+
+For the Scalp Massager and the Silk Pillowcase, which have no bottle to print on, place
+the name on a small printed hang-tag or care-label attached to the object itself — still
+part of the object, never a caption. No label may be blank.
+
+Each label carries ONLY its category name from the list above. Invent NO brand names,
+NO logos, NO slogans, NO other words.
+
+Let each cell's wall vary very slightly in tone and shadow, as separate photographs
+taken on different days would.
+
+SCORE BADGES — every cell carries a small round WHITE badge with a thin dark outline in
+its lower-right corner, containing a score in ordinary dark type. The eight scores read
+exactly, one per cell in this order: "3/10", "4/10", "3/10", "5/10", "5/10", "4/10",
+"3/10", "4/10". The ninth cell's badge reads exactly "9.4/10".
+
+There are NO cross marks, NO X marks and NO check marks anywhere. The badges contain
+only the score text.
+
+THE NINTH CELL is the winner: outlined with a thick brand-orange border and washed with
+a soft peach tint. It contains NO product, NO hand, NO forearm and NO object of any
+kind — it is the plain tinted wall alone, completely empty, with its score badge in the
+lower-right corner and the short caption beneath the grid. That empty space is reserved.
+
+Do not sketch, outline or suggest a hand there. The previous attempt drew a cartoon
+outline of a hand in this cell; the cell must be genuinely empty.
+
+
+PRODUCT — DO NOT DRAW IT, AND DO NOT DRAW ANY PLACEHOLDER. There is no magenta shape
+anywhere in this image. Nothing in any cell is magenta, pink, purple or violet.
+
+The ninth cell (bottom-right) is EMPTY: the plain peach-tinted wall alone, inside its
+brand-orange border, with its score badge in the lower-right corner. No product, no
+hand, no forearm, no outline and no object of any kind in that cell. That space is
+reserved and must stay clear.
+
+The other eight cells each contain their hand and their product exactly as described.
