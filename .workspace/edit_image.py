@@ -35,17 +35,26 @@ PRESERVE = (
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--image", required=True)
-    ap.add_argument("--instruction", required=True)
+    ap.add_argument("--instruction", default="")
+    ap.add_argument("--instruction-file", default="",
+                    help="read the instruction from a file (avoids shell quoting issues)")
     ap.add_argument("--out", required=True)
     ap.add_argument("--aspect-ratio", default="")
     ap.add_argument("--ref", default="", help="second image, e.g. the real product photo")
     a = ap.parse_args()
 
+    instruction = a.instruction
+    if a.instruction_file:
+        with open(a.instruction_file) as f:
+            instruction = f.read()
+    if not instruction.strip():
+        sys.exit("need --instruction or --instruction-file")
+
     key = get_key()
     parts = [b64_image_part(a.image)]
     if a.ref:
         parts.append(b64_image_part(a.ref))
-    parts.append({"text": a.instruction + PRESERVE})
+    parts.append({"text": instruction + PRESERVE})
     payload = {"contents": [{"parts": parts}]}
     if a.aspect_ratio:
         payload["generationConfig"] = {
