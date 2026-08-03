@@ -164,6 +164,39 @@ colored patch of any kind beneath or around it.
      "contact with the surface, in the counter's perspective. The counter is matte and "
      "shows no reflection of it whatsoever."),
 
+    # ── h06: a cropped, out-of-focus woman occupied the right of frame and broke
+    #    the first-person premise — you cannot be inside her viewpoint and looking
+    #    at the back of her head at the same time. Removed entirely. ────────────
+    "h06_pov_callouts": ("""
+
+NO PERSON IN FRAME — THIS IS THE MAIN CORRECTION. There is NO woman, NO head, NO hair,
+NO face, NO shoulder, NO torso and no part of any body in this image except ONE HAND and
+the FOREARM attached to it. The previous version showed the back of a woman's head in the
+upper right and her shoulder in the lower right; both are removed completely.
+
+TRUE FIRST-PERSON POINT OF VIEW. The camera IS her eyes. It looks down and slightly
+forward from her own head height at her own hand holding the product out in front of
+her. You cannot see her, because you are her. Nothing of the viewer's own body appears
+except that one hand and forearm entering the frame from the lower left.
+
+The right side of the frame, where she used to be, is now simply more of the room: the
+warm wooden counter continuing, soft morning light falling across it, and the softly
+blurred kitchen wall beyond. Keep that area calm and uncluttered so the callout labels
+sit cleanly against it.
+
+THE SCENE stays exactly as it was and is the reason this ad works: low golden morning
+light raking in through the window at the left, a ceramic mug of coffee with steam
+rising, a folded linen towel, warm wooden counter with visible grain, dust in the air.
+Shallow depth of field, filmic, unhurried, domestic and quiet. Shot on a 35mm lens at
+f/2 from eye level.
+
+Realism ON: natural light only, real skin texture on the hand with visible knuckle
+creases and natural nails, no smoothing, no studio fill.
+""", "the magenta shape is held upright in her hand at the centre-left of frame, at the "
+     "natural size of a 100 ml tube — about the length of her hand. Her fingers wrap "
+     "around it and are drawn completely and realistically ON TOP of the magenta so the "
+     "grip is clearly visible."),
+
     # ── h08: the callout arrows pointed at the wrong parts of the product ────────
     "h08_marker": ("""
 
